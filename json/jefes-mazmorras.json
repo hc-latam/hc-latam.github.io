@@ -1,0 +1,138 @@
+[
+    {
+        "id": "1",
+        "titulo": "La Morada de Oculus",
+        "lema": "Usa control mental para poner a los enemigos de su lado",
+        "caracteristicas": "Equipo Balanceado,Luchadores de control mental,Medio\/Dif\u00edcil",
+        "equipo": "2 tanques, 2 resucitadores, 2 sanadores, 2 arqueros",
+        "imagen": "img\/jefes-mazmorras\/oculus.png"
+    },
+    {
+        "id": "2",
+        "titulo": "Reino de la Dama",
+        "lema": "Puede invocar un n\u00famero incre\u00edble de secuaces",
+        "caracteristicas": "Equipo Balanceado,Usar da\u00f1o de salpicadura,Medio",
+        "equipo": "2 tanques, 2 resucitadores, 2 sanadores, 2 arqueros",
+        "imagen": "img\/jefes-mazmorras\/dama.png"
+    },
+    {
+        "id": "3",
+        "titulo": "C\u00edrculo M\u00edstico",
+        "lema": "El poder del cristal le da vida a los muertos y se la quita a los vivos. Mas vale no acercarse ni de broma.",
+        "caracteristicas": "Alto da\u00f1o, Sin resurrecci\u00f3n, Dif\u00edcil",
+        "equipo": "2 tanques, 2 arqueros, 2 sanadores, 2 asesinos",
+        "imagen": "img\/jefes-mazmorras\/lagarto.png"
+    },
+    {
+        "id": "4",
+        "titulo": "Reino de Arena",
+        "lema": "No bajes la guardia cuando mates al escorpi\u00f3n, ese es el momento crucial.",
+        "caracteristicas": "Alto da\u00f1o, Usar mucha resurrecci\u00f3n, Dif\u00edcil",
+        "equipo": "1 tanque, 1 asesino, 4 resucitadores, 2 arqueros",
+        "imagen": "img\/jefes-mazmorras\/escorpion.png"
+    },
+    {
+        "id": "5",
+        "titulo": "Templo Perdido",
+        "lema": "Primera etapa flechas de fuego, luego resucita con espada.",
+        "caracteristicas": "Alto da\u00f1o, \u00a1Sin arqueros!, Medio",
+        "equipo": "4 tanques\/asesinos, 1 sanador, 3 resucitadores",
+        "imagen": "img\/jefes-mazmorras\/samurai.png"
+    },
+    {
+        "id": "6",
+        "titulo": "Cripta del invocador",
+        "lema": "Lanza hechizos aleatorios en orden aleatorio",
+        "caracteristicas": "Equipo balanceado, Llevar defensa magica alta, Medio",
+        "equipo": "2 tanques, 2 resucitadores, 2 sanadores, 2 arqueros",
+        "imagen": "img\/jefes-mazmorras\/invocador.png"
+    },
+    {
+        "id": "7",
+        "titulo": "Cueva de Peque",
+        "lema": "Al menos una unidad debe sobrevivir hasta el final de la batalla",
+        "caracteristicas": "Se necesita mucha resurrecci\u00f3n, 3 rondas de 30 segundos, F\u00e1cil",
+        "equipo": "4 sanadores, 4 resucitadores",
+        "imagen": "img\/jefes-mazmorras\/peque.png"
+    },
+    {
+        "id": "8",
+        "titulo": "Lago de la mounstruocidad",
+        "lema": "Refleja la mayor\u00eda del da\u00f1o f\u00edsico",
+        "caracteristicas": "Refleja da\u00f1o f\u00edsico, Sin tanques ni asesinos, Medio",
+        "equipo": "2 arqueros, 4 resucitadores, 2 magos de da\u00f1o",
+        "imagen": "img\/jefes-mazmorras\/monstruosidad.png"
+    },
+    {
+        "id": "9",
+        "titulo": "Aposentos del Emperador",
+        "lema": "Invoca secuaces y luego desaparece del campo de batalla",
+        "caracteristicas": "Equipo balanceado, Invoca asesinos, Medio",
+        "equipo": "2 tanques, 2 resucitadores, 2 sanadores, 2 arqueros",
+        "imagen": "img\/jefes-mazmorras\/momia.png"
+    },
+    {
+        "id": "10",
+        "titulo": "Arena del Conde Vampiro",
+        "lema": "Una criatura voladora. Las armas cuerpo a cuerpo son in\u00fatiles",
+        "caracteristicas": "Sin tanques\/asesinos, Muchos resucitadores, Medio",
+        "equipo": "4 resucitadores, 0-1 sanador, 3-4 arqueros",
+        "imagen": "img\/jefes-mazmorras\/vampiro.png"
+    },
+    {
+        "id": "11",
+        "titulo": "El refugio del guardi\u00e1n",
+        "lema": "Absorbe da\u00f1o m\u00e1gico y restaura su propia salud.",
+        "caracteristicas": "Sin da\u00f1o m\u00e1gico, Sin resurrecci\u00f3n, Medio",
+        "equipo": "2 tanques, 2 asesinos, 2 sanadores, 2 arqueros",
+        "imagen": "img\/jefes-mazmorras\/guardian.png"
+    },
+    {
+        "id": "12",
+        "titulo": "Salones del Hechicero Supremo",
+        "lema": "Ning\u00fan combatiente cuerpo a cuerpo puede acabar con un hechicero que se teletransporta tan r\u00e1pido",
+        "caracteristicas": "Interrumpe la resurrecci\u00f3n, Llevar guerreros a distancia, Medio",
+        "equipo": "2 asesinos con teletransporte, 2 sanadores, 4 arqueros",
+        "imagen": "img\/jefes-mazmorras\/hechicero.png"
+    },
+    {
+        "id": "13",
+        "titulo": "Gruta del Invencible",
+        "lema": "Desaf\u00eda a un duelo a una unidad al azar",
+        "caracteristicas": "Tratar de hacerlo al final, Sin magos, Medio",
+        "equipo": "4-6 tanques\/asesinos, 0-2 arqueros",
+        "imagen": "img\/jefes-mazmorras\/rata.png"
+    },
+    {
+        "id": "14",
+        "titulo": "Guarida del Rey Duende",
+        "lema": "Mata al Rey Duende antes que se desvanezca en la oscuridad",
+        "caracteristicas": "Equipo balanceado, 3 rondas de 30 segundos, F\u00e1cil",
+        "equipo": "2 tanques, 2 resucitadores, 2 sanadores, 2 arqueros",
+        "imagen": "img\/jefes-mazmorras\/duende.png"
+    },
+    {
+        "id": "15",
+        "titulo": "Jard\u00edn del gran \u00e1rbol",
+        "lema": "Amarra los pies con ra\u00edces, cuerpo a cuerpo no sirve",
+        "caracteristicas": "Sin tanques\/asesinos, Muchos resucitadores, Artefactos desabilitados, F\u00e1cil",
+        "equipo": "4 resucitadores, 0-1 sanador, 3-4 arqueros",
+        "imagen": "img\/jefes-mazmorras\/barbol.png"
+    },
+    {
+        "id": "16",
+        "titulo": "C\u00e1mara de humo",
+        "lema": "Ataca en 3 fases de avalancha de piedras",
+        "caracteristicas": "Tratar de hacerlo al \u00faltimo, Se requiere alto da\u00f1o, Medio\/Dif\u00edcil",
+        "equipo": "4 asesinos, 4 magos",
+        "imagen": "img\/jefes-mazmorras\/dragon.png"
+    },
+    {
+        "id": "17",
+        "titulo": "Morada de la Bestia",
+        "lema": "Tiene diversas fases de furia con diversos comportamientos en cada una de ellas",
+        "caracteristicas": "Equipo balanceado, Alto da\u00f1o, Medio",
+        "equipo": "2 tanques, 2 resucitadores, 2 sanadores, 2 arqueros",
+        "imagen": "img\/jefes-mazmorras\/ciclope.png"
+    }
+]

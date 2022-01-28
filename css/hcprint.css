@@ -1,0 +1,121 @@
+body {
+    font-family: 'Nunito', sans-serif;
+    background-color: transparent;
+    text-align: center;
+}
+.card {
+    border: 5px solid #00838E;
+    border-radius: 16px;
+    padding: 5px;
+    background-color: #FFF;
+    text-align: left;
+}
+.card .row,
+.card .interior{
+    background-color: #FFF;
+    border-radius: 8px;
+    padding: 5px;
+}
+
+.card .card-body {
+    padding: 0;
+}
+.card .interior .card-body {
+    padding: 0 5px;
+}
+.card .card-body h5 {
+    margin: 7px 0 5px 0;
+    text-align: center;
+}
+.interior .card-body p {
+    text-align: center;
+    font-size: 1em;
+}
+ul{
+    list-style-type: none;
+    padding: 0px;
+    margin-bottom: 0px;
+    width: 100%;
+    margin-top: -5px;
+    font-size: 0.94em;
+}
+.interior ul {
+    font-size: 1em;
+    padding-left: 10px;
+}
+ul> li:before {
+    content: "-";
+    margin-right: 2px;
+}
+.card .row p {
+    line-height: 1.2em;
+    width: 100%;
+}
+.card .row p.blanco {
+    padding: 0 0 0 15px;
+}
+.interior .card-footer {
+    background-color: transparent;
+    border-top: 0;
+    padding: 0 15px;
+}
+.blanco {
+    color: #00838E;
+}
+.petroleo {
+    color: #00BBC9;
+}
+.celeste {
+    color: #00838E;
+}
+.naranja {
+    color: #e7a72a;
+}
+.verdoso {
+    color: #c40d00;
+}
+.rojo {
+    color: #c40d00;
+}
+.amarilloso {
+    color: #e7a72a;
+}
+
+#buscador {
+    display: none;
+}
+
+h5 {
+    font-weight: bold;
+}
+h6 {
+    margin: 5px 0 0 0;
+    font-weight: bold;
+}
+h1 {
+    margin: 0;
+    font-weight: bold;
+}
+h1, h6, h3 {
+    display: inline-block;
+    font-size: 1.5em;
+    margin-left: 5px;
+}
+.btn {
+    margin-left: 20px;
+    border-radius: .5rem;
+}
+.interior {
+    text-align: center;
+}
+.interior img {
+    width: 60%;
+}
+
+@media (min-width: 48em) {
+    .card-columns {
+        -webkit-column-count: 4;
+        -moz-column-count: 4;
+        column-count: 4;
+    }
+}
