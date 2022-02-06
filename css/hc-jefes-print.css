@@ -119,3 +119,7 @@ h1, h6, h3 {
         column-count: 4;
     }
 }
+
+.btn-group-fab {
+    display: none;
+}

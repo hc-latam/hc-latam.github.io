@@ -6,6 +6,38 @@ body {
 footer {
     color: #FFF;
 }
+.blanco {
+    color: #FFF;
+}
+.petroleo {
+    color: #00BBC9;
+}
+.celeste {
+    color: #54f8ff;
+}
+.naranja {
+    color: #E9CB37;
+}
+.verdoso {
+    color: #edffd2;
+}
+.rojo {
+    color: #c40d00;
+}
+.amarilloso {
+    color: #e7a72a;
+}
+h5 {
+    font-weight: bold;
+}
+h6 {
+    margin: 5px 0 0 0;
+    font-weight: bold;
+}
+h1 {
+    margin: 0;
+    font-weight: bold;
+}
 .card {
     border: 5px solid #00838E;
     border-radius: 16px;
@@ -67,27 +99,7 @@ ul> li:before {
     border-top: 0;
     padding: 0 15px;
 }
-.blanco {
-    color: #FFF;
-}
-.petroleo {
-    color: #00BBC9;
-}
-.celeste {
-    color: #54f8ff;
-}
-.naranja {
-    color: #E9CB37;
-}
-.verdoso {
-    color: #edffd2;
-}
-.rojo {
-    color: #c40d00;
-}
-.amarilloso {
-    color: #e7a72a;
-}
+
 
 #buscador {
     margin: 10px auto;
@@ -117,17 +129,7 @@ ul> li:before {
     border-color: #00838E;
     box-shadow: 0 0 0 0.2rem #54f8ff78;
 }
-h5 {
-    font-weight: bold;
-}
-h6 {
-    margin: 5px 0 0 0;
-    font-weight: bold;
-}
-h1 {
-    margin: 0;
-    font-weight: bold;
-}
+
 .btn {
     margin-left: 20px;
     border-radius: .5rem;
