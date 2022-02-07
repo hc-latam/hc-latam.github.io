@@ -2,8 +2,9 @@
     {
         "id": "1",
         "nombre": "Incinerador",
-        "descripcion": "<b>Obligatorio</b> porque el fuego bloquea la resurrección en el equipo enemigo. También inflige un daño significativo.<br />Podría volverse menos popular si el nuevo conjunto <b>Ejecutor de la Luz</b> es lo suficientemente fuerte, pués también bloquea las resurrecciones.",
+        "descripcion": " porque el fuego bloquea la resurrección en el equipo enemigo. También inflige un daño significativo.<br />Podría volverse menos popular si el nuevo conjunto Ejecutor de la Luz es lo suficientemente fuerte, pués también bloquea las resurrecciones.",
         "nivel": "Obligatorio",
+        "arma": "Varita",
         "imagenes": [
             {
                 "src": "incinerador.png",
