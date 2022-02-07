@@ -1,0 +1,64 @@
+body {
+    font-family: 'Nunito', sans-serif;
+    background-color: transparent;
+    text-align: center;
+}
+footer {
+    color: #000;
+}
+.blanco {
+    color: #000;
+}
+.gris {
+    color: #888;
+}
+.petroleo {
+    color: #00BBC9;
+}
+.rojo {
+    color: #c40d00;
+}
+.amarilloso {
+    color: #e7a72a;
+}
+h5 {
+    font-weight: bold;
+}
+h6 {
+    margin: 5px 0 0 0;
+    font-weight: bold;
+}
+h1 {
+    margin: 0;
+    font-weight: bold;
+}
+
+.imagenes {
+    text-align: center;
+}
+
+.card-columns .card {
+    background-color: #000000;
+    border: 5px solid #000;
+    border-radius: 20px;
+    padding: 20px;
+    margin: 5px;
+    text-align: left;
+}
+
+.card-columns .card img {
+    width: 50px;
+    margin-bottom: 5px;
+    margin-right: 3px;
+}
+.card-columns .card img.armadura {
+    width: 140px;
+    margin: 0px;
+}
+.card-columns .card img.esencia {
+    width: 100px;
+    margin-right: 0px;
+}
+.card-columns .card img.esencia-azul {
+    width: 40px;
+}
