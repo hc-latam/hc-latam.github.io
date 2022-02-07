@@ -23,12 +23,45 @@
                 "alt": "Escamas de dragón"
             },
             {
-                "src": "incinerador-coral.png",
+                "src": "coral.png",
                 "alt": "Coral"
             },
             {
-                "src": "incinerador-arbol-runico.png",
+                "src": "arbol-runico.png",
                 "alt": "Árbol Rúnico"
+            }
+        ]
+    },
+    {
+        "id": "2",
+        "nombre": "Paladín",
+        "descripcion": " porque elimina el aturdimiento y proporciona inmunidad (de vez en cuando) a todo tu escuadrón. Sin mencionar que es inmune al control mental de Angel Wand (solo el propio Paladín). Construye tu Paladin 4-set y detente. Haz el anillo, el collar, la armadura y el alma de la armadura de Paladín. Paladin de 6-set no es una gran mejora y te hace perder mucho tiempo construyéndolo para un aumento mínimo en el rendimiento.",
+        "nivel": "Obligatorio",
+        "arma": "Maza",
+        "imagenes": [
+            {
+                "src": "paladin.png",
+                "alt": "Paladín"
+            },
+            {
+                "src": "paladin-lampara-dorada.png",
+                "alt": "Lámpara dorada"
+            },
+            {
+                "src": "paladin-lazurita.png",
+                "alt": "Lazurita"
+            },
+            {
+                "src": "paladin-codice.png",
+                "alt": "Códice"
+            },
+            {
+                "src": "coral.png",
+                "alt": "Coral"
+            },
+            {
+                "src": "sangre-monstruo.png",
+                "alt": "Sangre de Monstruo"
             }
         ]
     }
