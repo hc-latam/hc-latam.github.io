@@ -9,17 +9,11 @@ footer {
 .blanco {
     color: #FFF;
 }
+.gris {
+    color: #C1C1C1;
+}
 .petroleo {
     color: #00BBC9;
-}
-.celeste {
-    color: #54f8ff;
-}
-.naranja {
-    color: #E9CB37;
-}
-.verdoso {
-    color: #edffd2;
 }
 .rojo {
     color: #c40d00;
@@ -37,4 +31,32 @@ h6 {
 h1 {
     margin: 0;
     font-weight: bold;
+}
+
+.imagenes {
+    text-align: center;
+}
+
+.card-columns .card {
+    background-color: #000000;
+    border: 5px solid #FFF;
+    border-radius: 20px;
+    padding: 20px;
+    margin: 5px;
+    text-align: left;
+}
+
+.card-columns .card img {
+    width: 50px;
+    margin-bottom: 5px;
+}
+.card-columns .card img.armadura {
+    width: 140px;
+    margin-bottom: 0px;
+}
+.card-columns .card img.esencia {
+    width: 100px;
+}
+.card-columns .card img.esencia-azul {
+    width: 40px;
 }

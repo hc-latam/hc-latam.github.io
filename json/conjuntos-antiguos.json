@@ -1,0 +1,34 @@
+[
+    {
+        "id": "1",
+        "nombre": "Incinerador",
+        "descripcion": "<b>Obligatorio</b> porque el fuego bloquea la resurrección en el equipo enemigo. También inflige un daño significativo.<br />Podría volverse menos popular si el nuevo conjunto <b>Ejecutor de la Luz</b> es lo suficientemente fuerte, pués también bloquea las resurrecciones.",
+        "nivel": "Obligatorio",
+        "imagenes": [
+            {
+                "src": "incinerador.png",
+                "alt": "Incinerador"
+            },
+            {
+                "src": "incinerador-llama-dragon.png",
+                "alt": "Llama de dragón"
+            },
+            {
+                "src": "incinerador-diente-dragon.png",
+                "alt": "Diente de dragón"
+            },
+            {
+                "src": "incinerador-escamas-dragon.png",
+                "alt": "Escamas de dragón"
+            },
+            {
+                "src": "incinerador-coral.png",
+                "alt": "Coral"
+            },
+            {
+                "src": "incinerador-arbol-runico.png",
+                "alt": "Árbol Rúnico"
+            }
+        ]
+    }
+]
