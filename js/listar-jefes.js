@@ -63,7 +63,7 @@ function generarJefe(titulo, lema, caracteristicas, equipo, imagen) {
     var div1 = $("<div></div>").addClass("row no-gutters")
     var divImg = $("<div></div>").addClass("col-md-5")
     var imagenT = $("<img />")
-    imagenT.attr('src', imagen)
+    imagenT.attr('src', 'img/jefes-mazmorras/' + imagen)
     imagenT.addClass("card-img")
     imagenT.attr("alt", titulo)
     divImg.append(imagenT)
@@ -104,7 +104,7 @@ function generarJefe2(titulo, lema, caracteristicas, equipo, imagen) {
     var tarjetaInterior = $("<div></div>").addClass("interior")
 
     var imagenT = $("<img />")
-    imagenT.attr('src', imagen)
+    imagenT.attr('src', 'img/jefes-mazmorras/' + imagen)
     imagenT.addClass("card-img-top")
     imagenT.attr("alt", titulo)
     tarjetaInterior.append(imagenT)
