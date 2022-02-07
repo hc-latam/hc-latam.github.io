@@ -49,13 +49,15 @@ h1 {
 .card-columns .card img {
     width: 50px;
     margin-bottom: 5px;
+    margin-right: 3px;
 }
 .card-columns .card img.armadura {
     width: 140px;
-    margin-bottom: 0px;
+    margin: 0px;
 }
 .card-columns .card img.esencia {
     width: 100px;
+    margin-right: 0px;
 }
 .card-columns .card img.esencia-azul {
     width: 40px;
