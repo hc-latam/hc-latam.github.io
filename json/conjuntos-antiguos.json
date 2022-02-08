@@ -3,7 +3,7 @@
         "id": "1",
         "nombre": "Incinerador",
         "descripcion": " porque el fuego bloquea la resurrección en el equipo enemigo. También inflige un daño significativo.<br />Podría volverse menos popular si el nuevo conjunto Ejecutor de la Luz es lo suficientemente fuerte, pués también bloquea las resurrecciones.",
-        "nivel": "Obligatorio",
+        "nivel": "Indispensable",
         "arma": "Varita",
         "imagenes": [
             {
@@ -35,8 +35,8 @@
     {
         "id": "2",
         "nombre": "Paladín",
-        "descripcion": " porque elimina el aturdimiento y proporciona inmunidad (de vez en cuando) a todo tu escuadrón. Sin mencionar que es inmune al control mental de Angel Wand (solo el propio Paladín). Construye tu Paladin 4-set y detente. Haz el anillo, el collar, la armadura y el alma de la armadura de Paladín. Paladin de 6-set no es una gran mejora y te hace perder mucho tiempo construyéndolo para un aumento mínimo en el rendimiento.",
-        "nivel": "Obligatorio",
+        "descripcion": " porque elimina el aturdimiento y proporciona inmunidad (de vez en cuando) a todo tu escuadrón. Sin mencionar que es inmune al control mental de Angel Wand (solo el propio Paladín). Construye tu Paladin de 4 piezas y detente. Haz el anillo, el collar, la armadura y el alma de la armadura de Paladín. Paladin de 6 piezas no es una gran mejora y te hace perder mucho tiempo construyéndolo para un aumento mínimo en el rendimiento.",
+        "nivel": "Indispensable",
         "arma": "Maza",
         "imagenes": [
             {
@@ -62,6 +62,864 @@
             {
                 "src": "sangre-monstruo.png",
                 "alt": "Sangre de Monstruo"
+            }
+        ]
+    },
+    {
+        "id": "3",
+        "nombre": "Darkula",
+        "descripcion": ". El rey de los magos se establece, aunque no bloquea ni resucita, elimina el daño de cualquier otro mago del agua con ambas manos atadas a la espalda. También ayuda a tus otros luchadores a mantenerse con vida al curarse a menudo y mucho.",
+        "nivel": "Indispensable",
+        "arma": "Orbe",
+        "imagenes": [
+            {
+                "src": "",
+                "alt": ""
+            },
+            {
+                "src": "",
+                "alt": ""
+            },
+            {
+                "src": "",
+                "alt": ""
+            },
+            {
+                "src": "",
+                "alt": ""
+            },
+            {
+                "src": "",
+                "alt": ""
+            },
+            {
+                "src": "",
+                "alt": ""
+            }
+        ]
+    },
+    {
+        "id": "4",
+        "nombre": "Aniquilador",
+        "descripcion": ". Malo en los primeros días, ahora rudo. Sin embargo, puede ser difícil de terminar de fabricar. Inflige el mayor daño que cualquier conjunto de tanque. Puede ser muy fácil de matar si faltan ciertos elementos.",
+        "nivel": "Indispensable",
+        "arma": "Hacha",
+        "imagenes": [
+            {
+                "src": "",
+                "alt": ""
+            },
+            {
+                "src": "",
+                "alt": ""
+            },
+            {
+                "src": "",
+                "alt": ""
+            },
+            {
+                "src": "",
+                "alt": ""
+            },
+            {
+                "src": "",
+                "alt": ""
+            },
+            {
+                "src": "",
+                "alt": ""
+            }
+        ]
+    },
+    {
+        "id": "5",
+        "nombre": "Legionario",
+        "descripcion": ". Gran conjunto, cerca de una combinación perfecta de capacidad de tanque y producción de daño. Reduce cualquier daño (excepto el daño puro) superior a 30k (30.000), lo que lo hace muy resistente contra casi cualquier oponente.",
+        "nivel": "Indispensable",
+        "arma": "Lanza <br /> Tipo de Armadura: Arquero",
+        "imagenes": [
+            {
+                "src": "",
+                "alt": ""
+            },
+            {
+                "src": "",
+                "alt": ""
+            },
+            {
+                "src": "",
+                "alt": ""
+            },
+            {
+                "src": "",
+                "alt": ""
+            },
+            {
+                "src": "",
+                "alt": ""
+            },
+            {
+                "src": "",
+                "alt": ""
+            }
+        ]
+    },
+    {
+        "id": "6",
+        "nombre": "Tormento (Bane)",
+        "descripcion": ". De vuelta con estilo. Inflige fácilmente más daño que cualquier otra cosa, si puedes mantenerlo con vida y tienes el equipo adecuado de eventos. Últimamente, a menudo se usa como Paladín de 4 piezas con armas de Tormento de 2 piezas para maximizar las posibilidades de mantenerse con vida. Tormento de 6 piezas también es muy fuerte.",
+        "nivel": "Indispensable",
+        "arma": "Ballesta",
+        "imagenes": [
+            {
+                "src": "",
+                "alt": ""
+            },
+            {
+                "src": "",
+                "alt": ""
+            },
+            {
+                "src": "",
+                "alt": ""
+            },
+            {
+                "src": "",
+                "alt": ""
+            },
+            {
+                "src": "",
+                "alt": ""
+            },
+            {
+                "src": "",
+                "alt": ""
+            }
+        ]
+    },
+    {
+        "id": "7",
+        "nombre": "Ejecutor de la luz (EoL)",
+        "descripcion": ". Solido conjunto para tanque. Si se utiliza con Legionario + Tormento, la bonificación de daño compensará fácilmente que su propio daño sea bajo. También aumenta la tasa de supervivencia del escuadrón. Si aún no se ha construido Aniquilador ni EoL, iría con EoL",
+        "nivel": "Indispensable",
+        "arma": "Hacha",
+        "imagenes": [
+            {
+                "src": "",
+                "alt": ""
+            },
+            {
+                "src": "",
+                "alt": ""
+            },
+            {
+                "src": "",
+                "alt": ""
+            },
+            {
+                "src": "",
+                "alt": ""
+            },
+            {
+                "src": "",
+                "alt": ""
+            },
+            {
+                "src": "",
+                "alt": ""
+            }
+        ]
+    },
+    {
+        "id": "8",
+        "nombre": "Tormenta",
+        "descripcion": ". Daño bajo/medio. Reducción de daño alta, pero retrasada. Requiere equipo específico para sobrevivir hasta que la reducción de daño establecida comience a funcionar. Inflige una cantidad decente de daño con el equipo de evento adecuado.",
+        "nivel": "Interesante",
+        "arma": "Espada <br />Tipo de Armadura: Arquero",
+        "imagenes": [
+            {
+                "src": "",
+                "alt": ""
+            },
+            {
+                "src": "",
+                "alt": ""
+            },
+            {
+                "src": "",
+                "alt": ""
+            },
+            {
+                "src": "",
+                "alt": ""
+            },
+            {
+                "src": "",
+                "alt": ""
+            },
+            {
+                "src": "",
+                "alt": ""
+            }
+        ]
+    },
+    {
+        "id": "9",
+        "nombre": "Sombra (Asesino-Ninja)",
+        "descripcion": ". No es tan fuerte como antes, pero cuando está fuertemente gemado, todavía es capaz de infligir un gran daño y mantenerse con vida. Puede ser útil para jefes de mazmorras, aunque no lo construyas específicamente para eso.",
+        "nivel": "Interesante",
+        "arma": "Dagas <br /> Tipo de Armadura: Arquero",
+        "imagenes": [
+            {
+                "src": "",
+                "alt": ""
+            },
+            {
+                "src": "",
+                "alt": ""
+            },
+            {
+                "src": "",
+                "alt": ""
+            },
+            {
+                "src": "",
+                "alt": ""
+            },
+            {
+                "src": "",
+                "alt": ""
+            },
+            {
+                "src": "",
+                "alt": ""
+            }
+        ]
+    },
+    {
+        "id": "10",
+        "nombre": "Ilusionista",
+        "descripcion": ". Mago de apoyo, intenta abrumar a los enemigos invocando clones. Solo puede tener 1 clon al mismo tiempo, pero vuelve a invocar a los clones una vez que se acaba el tiempo de reutilización y no hay ningún clon vivo en ese momento. Se volvió mejor y más popular para escuadrones de 2 Legionarios.",
+        "nivel": "Interesante",
+        "arma": "Cetro",
+        "imagenes": [
+            {
+                "src": "",
+                "alt": ""
+            },
+            {
+                "src": "",
+                "alt": ""
+            },
+            {
+                "src": "",
+                "alt": ""
+            },
+            {
+                "src": "",
+                "alt": ""
+            },
+            {
+                "src": "",
+                "alt": ""
+            },
+            {
+                "src": "",
+                "alt": ""
+            }
+        ]
+    },
+    {
+        "id": "11",
+        "nombre": "Nigromante",
+        "descripcion": ". No es el mayor repartidor de daños ni el mejor mago. Sigue siendo un conjunto sólido si no quieres seguir el manual al pie de la letra.",
+        "nivel": "Interesante",
+        "arma": "Libro",
+        "imagenes": [
+            {
+                "src": "",
+                "alt": ""
+            },
+            {
+                "src": "",
+                "alt": ""
+            },
+            {
+                "src": "",
+                "alt": ""
+            },
+            {
+                "src": "",
+                "alt": ""
+            },
+            {
+                "src": "",
+                "alt": ""
+            },
+            {
+                "src": "",
+                "alt": ""
+            }
+        ]
+    },
+    {
+        "id": "12",
+        "nombre": "Oráculo",
+        "descripcion": "",
+        "nivel": "",
+        "arma": "",
+        "imagenes": [
+            {
+                "src": "",
+                "alt": ""
+            },
+            {
+                "src": "",
+                "alt": ""
+            },
+            {
+                "src": "",
+                "alt": ""
+            },
+            {
+                "src": "",
+                "alt": ""
+            },
+            {
+                "src": "",
+                "alt": ""
+            },
+            {
+                "src": "",
+                "alt": ""
+            }
+        ]
+    },
+    {
+        "id": "13",
+        "nombre": "Muerte Gélida",
+        "descripcion": "",
+        "nivel": "",
+        "arma": "",
+        "imagenes": [
+            {
+                "src": "",
+                "alt": ""
+            },
+            {
+                "src": "",
+                "alt": ""
+            },
+            {
+                "src": "",
+                "alt": ""
+            },
+            {
+                "src": "",
+                "alt": ""
+            },
+            {
+                "src": "",
+                "alt": ""
+            },
+            {
+                "src": "",
+                "alt": ""
+            }
+        ]
+    },
+    {
+        "id": "14",
+        "nombre": "Inventor",
+        "descripcion": "",
+        "nivel": "",
+        "arma": "",
+        "imagenes": [
+            {
+                "src": "",
+                "alt": ""
+            },
+            {
+                "src": "",
+                "alt": ""
+            },
+            {
+                "src": "",
+                "alt": ""
+            },
+            {
+                "src": "",
+                "alt": ""
+            },
+            {
+                "src": "",
+                "alt": ""
+            },
+            {
+                "src": "",
+                "alt": ""
+            }
+        ]
+    },
+    {
+        "id": "15",
+        "nombre": "Encantador de serpientes",
+        "descripcion": "",
+        "nivel": "",
+        "arma": "",
+        "imagenes": [
+            {
+                "src": "",
+                "alt": ""
+            },
+            {
+                "src": "",
+                "alt": ""
+            },
+            {
+                "src": "",
+                "alt": ""
+            },
+            {
+                "src": "",
+                "alt": ""
+            },
+            {
+                "src": "",
+                "alt": ""
+            },
+            {
+                "src": "",
+                "alt": ""
+            }
+        ]
+    },
+    {
+        "id": "16",
+        "nombre": "Sacerdote",
+        "descripcion": "",
+        "nivel": "",
+        "arma": "",
+        "imagenes": [
+            {
+                "src": "",
+                "alt": ""
+            },
+            {
+                "src": "",
+                "alt": ""
+            },
+            {
+                "src": "",
+                "alt": ""
+            },
+            {
+                "src": "",
+                "alt": ""
+            },
+            {
+                "src": "",
+                "alt": ""
+            },
+            {
+                "src": "",
+                "alt": ""
+            }
+        ]
+    },
+    {
+        "id": "17",
+        "nombre": "Cazador de Demonios",
+        "descripcion": "",
+        "nivel": "",
+        "arma": "",
+        "imagenes": [
+            {
+                "src": "",
+                "alt": ""
+            },
+            {
+                "src": "",
+                "alt": ""
+            },
+            {
+                "src": "",
+                "alt": ""
+            },
+            {
+                "src": "",
+                "alt": ""
+            },
+            {
+                "src": "",
+                "alt": ""
+            },
+            {
+                "src": "",
+                "alt": ""
+            }
+        ]
+    },
+    {
+        "id": "18",
+        "nombre": "Bastión",
+        "descripcion": "",
+        "nivel": "",
+        "arma": "",
+        "imagenes": [
+            {
+                "src": "",
+                "alt": ""
+            },
+            {
+                "src": "",
+                "alt": ""
+            },
+            {
+                "src": "",
+                "alt": ""
+            },
+            {
+                "src": "",
+                "alt": ""
+            },
+            {
+                "src": "",
+                "alt": ""
+            },
+            {
+                "src": "",
+                "alt": ""
+            }
+        ]
+    },
+    {
+        "id": "19",
+        "nombre": "Guardabosque",
+        "descripcion": "",
+        "nivel": "",
+        "arma": "",
+        "imagenes": [
+            {
+                "src": "",
+                "alt": ""
+            },
+            {
+                "src": "",
+                "alt": ""
+            },
+            {
+                "src": "",
+                "alt": ""
+            },
+            {
+                "src": "",
+                "alt": ""
+            },
+            {
+                "src": "",
+                "alt": ""
+            },
+            {
+                "src": "",
+                "alt": ""
+            }
+        ]
+    },
+    {
+        "id": "20",
+        "nombre": "Eclipse",
+        "descripcion": "",
+        "nivel": "",
+        "arma": "",
+        "imagenes": [
+            {
+                "src": "",
+                "alt": ""
+            },
+            {
+                "src": "",
+                "alt": ""
+            },
+            {
+                "src": "",
+                "alt": ""
+            },
+            {
+                "src": "",
+                "alt": ""
+            },
+            {
+                "src": "",
+                "alt": ""
+            },
+            {
+                "src": "",
+                "alt": ""
+            }
+        ]
+    },
+    {
+        "id": "21",
+        "nombre": "Rey sin nombre",
+        "descripcion": "",
+        "nivel": "",
+        "arma": "",
+        "imagenes": [
+            {
+                "src": "",
+                "alt": ""
+            },
+            {
+                "src": "",
+                "alt": ""
+            },
+            {
+                "src": "",
+                "alt": ""
+            },
+            {
+                "src": "",
+                "alt": ""
+            },
+            {
+                "src": "",
+                "alt": ""
+            },
+            {
+                "src": "",
+                "alt": ""
+            }
+        ]
+    },
+    {
+        "id": "22",
+        "nombre": "Van Hellsong",
+        "descripcion": "",
+        "nivel": "",
+        "arma": "",
+        "imagenes": [
+            {
+                "src": "",
+                "alt": ""
+            },
+            {
+                "src": "",
+                "alt": ""
+            },
+            {
+                "src": "",
+                "alt": ""
+            },
+            {
+                "src": "",
+                "alt": ""
+            },
+            {
+                "src": "",
+                "alt": ""
+            },
+            {
+                "src": "",
+                "alt": ""
+            }
+        ]
+    },
+    {
+        "id": "23",
+        "nombre": "Dragoniano",
+        "descripcion": "",
+        "nivel": "",
+        "arma": "",
+        "imagenes": [
+            {
+                "src": "",
+                "alt": ""
+            },
+            {
+                "src": "",
+                "alt": ""
+            },
+            {
+                "src": "",
+                "alt": ""
+            },
+            {
+                "src": "",
+                "alt": ""
+            },
+            {
+                "src": "",
+                "alt": ""
+            },
+            {
+                "src": "",
+                "alt": ""
+            }
+        ]
+    },
+    {
+        "id": "24",
+        "nombre": "Raptor",
+        "descripcion": "",
+        "nivel": "",
+        "arma": "",
+        "imagenes": [
+            {
+                "src": "",
+                "alt": ""
+            },
+            {
+                "src": "",
+                "alt": ""
+            },
+            {
+                "src": "",
+                "alt": ""
+            },
+            {
+                "src": "",
+                "alt": ""
+            },
+            {
+                "src": "",
+                "alt": ""
+            },
+            {
+                "src": "",
+                "alt": ""
+            }
+        ]
+    },
+    {
+        "id": "25",
+        "nombre": "Piromante",
+        "descripcion": "",
+        "nivel": "",
+        "arma": "",
+        "imagenes": [
+            {
+                "src": "",
+                "alt": ""
+            },
+            {
+                "src": "",
+                "alt": ""
+            },
+            {
+                "src": "",
+                "alt": ""
+            },
+            {
+                "src": "",
+                "alt": ""
+            },
+            {
+                "src": "",
+                "alt": ""
+            },
+            {
+                "src": "",
+                "alt": ""
+            }
+        ]
+    },
+    {
+        "id": "26",
+        "nombre": "Octomano",
+        "descripcion": "",
+        "nivel": "",
+        "arma": "",
+        "imagenes": [
+            {
+                "src": "",
+                "alt": ""
+            },
+            {
+                "src": "",
+                "alt": ""
+            },
+            {
+                "src": "",
+                "alt": ""
+            },
+            {
+                "src": "",
+                "alt": ""
+            },
+            {
+                "src": "",
+                "alt": ""
+            },
+            {
+                "src": "",
+                "alt": ""
+            }
+        ]
+    },
+    {
+        "id": "27",
+        "nombre": "Fullero",
+        "descripcion": "",
+        "nivel": "",
+        "arma": "",
+        "imagenes": [
+            {
+                "src": "",
+                "alt": ""
+            },
+            {
+                "src": "",
+                "alt": ""
+            },
+            {
+                "src": "",
+                "alt": ""
+            },
+            {
+                "src": "",
+                "alt": ""
+            },
+            {
+                "src": "",
+                "alt": ""
+            },
+            {
+                "src": "",
+                "alt": ""
+            }
+        ]
+    },
+    {
+        "id": "28",
+        "nombre": "Sectario",
+        "descripcion": "",
+        "nivel": "",
+        "arma": "",
+        "imagenes": [
+            {
+                "src": "",
+                "alt": ""
+            },
+            {
+                "src": "",
+                "alt": ""
+            },
+            {
+                "src": "",
+                "alt": ""
+            },
+            {
+                "src": "",
+                "alt": ""
+            },
+            {
+                "src": "",
+                "alt": ""
+            },
+            {
+                "src": "",
+                "alt": ""
             }
         ]
     }
