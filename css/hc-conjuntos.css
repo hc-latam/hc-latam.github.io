@@ -21,6 +21,9 @@ footer {
 .amarilloso {
     color: #e7a72a;
 }
+.verde {
+    color: #a2e63e;
+}
 h5 {
     font-weight: bold;
 }
@@ -101,4 +104,16 @@ h1 {
 }
 .btn-light:not(:disabled):not(.disabled).active {
     color: #000000;
+}
+
+.card-columns .tanque {
+    border-color: #FF804F;
+}
+
+.card-columns .mago {
+    border-color: #9a6FFF;
+}
+
+.card-columns .arquero {
+    border-color: #1FDD63;
 }

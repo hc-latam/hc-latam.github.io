@@ -16,7 +16,19 @@ function listarConjuntos(conjuntos) {
     contenedor.empty()
 
     $.each(conjuntos, function(i, conjunto) {
-        var tarjetaConstruida = generarConjunto(conjunto.nombre, conjunto.descripcion, conjunto.nivel, conjunto.arma, conjunto.imagenes)
+        var tarjetaConstruida = generarConjunto(conjunto.nombre, conjunto.descripcion, conjunto.nivel, conjunto.arma, conjunto.imagenes);
+
+        if (conjunto.tipo == "Tanque") {
+            tarjetaConstruida.addClass('tanque');
+        } else if (conjunto.tipo == "Mago") {
+            tarjetaConstruida.addClass('mago');
+        } else if (conjunto.tipo == "Arquero") {
+            tarjetaConstruida.addClass('arquero');
+        }
+
+        if (conjunto.armadura == "Arquero") {
+            tarjetaConstruida.find('verde').html("<b>Tipo de armadura: </b>"+ conjunto.armadura)
+        }
         
         contenedor.append(tarjetaConstruida)
     });
@@ -35,6 +47,7 @@ function generarConjunto(nombre, descripcion, nivel, arma, imagenes) {
           "<h4 class='card-title amarilloso'>" + nombre + "</h4>"+
           "<p class='card-text gris'><b class='nivel blanco'>"+nivel+"</b>"+ descripcion +"</p>"+
           "<p class='card-text petroleo'><b>Tipo de arma: </b>"+ arma +"</p>"+
+          "<p class='card-text verde'></p>"+
         "</div></div></div>")
 
     return tarjeta    

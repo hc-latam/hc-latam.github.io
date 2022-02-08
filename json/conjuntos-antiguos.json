@@ -5,6 +5,8 @@
         "descripcion": " porque el fuego bloquea la resurrección en el equipo enemigo. También inflige un daño significativo.<br />Podría volverse menos popular si el nuevo conjunto Ejecutor de la Luz es lo suficientemente fuerte, pués también bloquea las resurrecciones.",
         "nivel": "Indispensable",
         "arma": "Varita",
+        "tipo": "Mago",
+        "armadura": null,
         "imagenes": [
             {
                 "src": "incinerador.png",
@@ -38,6 +40,8 @@
         "descripcion": " porque elimina el aturdimiento y proporciona inmunidad (de vez en cuando) a todo tu escuadrón. Sin mencionar que es inmune al control mental de Angel Wand (solo el propio Paladín). Construye tu Paladin de 4 piezas y detente. Haz el anillo, el collar, la armadura y el alma de la armadura de Paladín. Paladin de 6 piezas no es una gran mejora y te hace perder mucho tiempo construyéndolo para un aumento mínimo en el rendimiento.",
         "nivel": "Indispensable",
         "arma": "Maza",
+        "tipo": "Tanque",
+        "armadura": null,
         "imagenes": [
             {
                 "src": "paladin.png",
@@ -71,6 +75,8 @@
         "descripcion": ". El rey de los magos se establece, aunque no bloquea ni resucita, elimina el daño de cualquier otro mago del agua con ambas manos atadas a la espalda. También ayuda a tus otros luchadores a mantenerse con vida al curarse a menudo y mucho.",
         "nivel": "Indispensable",
         "arma": "Orbe",
+        "tipo": "Mago",
+        "armadura": null,
         "imagenes": [
             {
                 "src": "",
@@ -104,6 +110,8 @@
         "descripcion": ". Malo en los primeros días, ahora rudo. Sin embargo, puede ser difícil de terminar de fabricar. Inflige el mayor daño que cualquier conjunto de tanque. Puede ser muy fácil de matar si faltan ciertos elementos.",
         "nivel": "Indispensable",
         "arma": "Hacha",
+        "tipo": "Tanque",
+        "armadura": null,
         "imagenes": [
             {
                 "src": "",
@@ -136,7 +144,9 @@
         "nombre": "Legionario",
         "descripcion": ". Gran conjunto, cerca de una combinación perfecta de capacidad de tanque y producción de daño. Reduce cualquier daño (excepto el daño puro) superior a 30k (30.000), lo que lo hace muy resistente contra casi cualquier oponente.",
         "nivel": "Indispensable",
-        "arma": "Lanza <br /> Tipo de Armadura: Arquero",
+        "arma": "Lanza",
+        "tipo": "Tanque",
+        "armadura": "Arquero",
         "imagenes": [
             {
                 "src": "",
@@ -170,6 +180,8 @@
         "descripcion": ". De vuelta con estilo. Inflige fácilmente más daño que cualquier otra cosa, si puedes mantenerlo con vida y tienes el equipo adecuado de eventos. Últimamente, a menudo se usa como Paladín de 4 piezas con armas de Tormento de 2 piezas para maximizar las posibilidades de mantenerse con vida. Tormento de 6 piezas también es muy fuerte.",
         "nivel": "Indispensable",
         "arma": "Ballesta",
+        "tipo": "Arquero",
+        "armadura": null,
         "imagenes": [
             {
                 "src": "",
@@ -203,6 +215,8 @@
         "descripcion": ". Solido conjunto para tanque. Si se utiliza con Legionario + Tormento, la bonificación de daño compensará fácilmente que su propio daño sea bajo. También aumenta la tasa de supervivencia del escuadrón. Si aún no se ha construido Aniquilador ni EoL, iría con EoL",
         "nivel": "Indispensable",
         "arma": "Hacha",
+        "tipo": "Tanque",
+        "armadura": null,
         "imagenes": [
             {
                 "src": "",
@@ -233,9 +247,11 @@
     {
         "id": "8",
         "nombre": "Tormenta",
-        "descripcion": ". Daño bajo/medio. Reducción de daño alta, pero retrasada. Requiere equipo específico para sobrevivir hasta que la reducción de daño establecida comience a funcionar. Inflige una cantidad decente de daño con el equipo de evento adecuado.",
+        "descripcion": ". Requiere almas MUY oscuras. Daño bajo/medio. Reducción de daño alta, pero retrasada. Requiere equipo específico para sobrevivir hasta que la reducción de daño establecida comience a funcionar. Inflige una cantidad decente de daño con el equipo de evento adecuado.",
         "nivel": "Interesante",
-        "arma": "Espada <br />Tipo de Armadura: Arquero",
+        "arma": "Espada",
+        "tipo": "Tanque",
+        "armadura": "Arquero",
         "imagenes": [
             {
                 "src": "",
@@ -268,7 +284,9 @@
         "nombre": "Sombra (Asesino-Ninja)",
         "descripcion": ". No es tan fuerte como antes, pero cuando está fuertemente gemado, todavía es capaz de infligir un gran daño y mantenerse con vida. Puede ser útil para jefes de mazmorras, aunque no lo construyas específicamente para eso.",
         "nivel": "Interesante",
-        "arma": "Dagas <br /> Tipo de Armadura: Arquero",
+        "arma": "Dagas",
+        "tipo": "Tanque",
+        "armadura": "Arquero",
         "imagenes": [
             {
                 "src": "",
@@ -299,9 +317,11 @@
     {
         "id": "10",
         "nombre": "Ilusionista",
-        "descripcion": ". Mago de apoyo, intenta abrumar a los enemigos invocando clones. Solo puede tener 1 clon al mismo tiempo, pero vuelve a invocar a los clones una vez que se acaba el tiempo de reutilización y no hay ningún clon vivo en ese momento. Se volvió mejor y más popular para escuadrones de 2 Legionarios.",
+        "descripcion": ". Requiere almas MUY oscuras. Mago de apoyo, intenta abrumar a los enemigos invocando clones. Solo puede tener 1 clon al mismo tiempo, pero vuelve a invocar a los clones una vez que se acaba el tiempo de reutilización y no hay ningún clon vivo en ese momento. Se volvió mejor y más popular para escuadrones de 2 Legionarios.",
         "nivel": "Interesante",
         "arma": "Cetro",
+        "tipo": "Mago",
+        "armadura": null,
         "imagenes": [
             {
                 "src": "",
@@ -335,6 +355,8 @@
         "descripcion": ". No es el mayor repartidor de daños ni el mejor mago. Sigue siendo un conjunto sólido si no quieres seguir el manual al pie de la letra.",
         "nivel": "Interesante",
         "arma": "Libro",
+        "tipo": "Mago",
+        "armadura": null,
         "imagenes": [
             {
                 "src": "",
@@ -365,9 +387,11 @@
     {
         "id": "12",
         "nombre": "Oráculo",
-        "descripcion": "",
-        "nivel": "",
-        "arma": "",
+        "descripcion": ". Conjunto de mago débil, pero su daño puro ayuda mucho a deshacerse de los tanques molestos.",
+        "nivel": "Interesante",
+        "arma": "Cetro",
+        "tipo": "Mago",
+        "armadura": null,
         "imagenes": [
             {
                 "src": "",
@@ -398,9 +422,11 @@
     {
         "id": "13",
         "nombre": "Muerte Gélida",
-        "descripcion": "",
-        "nivel": "",
-        "arma": "",
+        "descripcion": ". Recibió algunos beneficios recientemente, parece estar funcionando mejor que Guarda o Cazador de demonios.",
+        "nivel": "Interesante",
+        "arma": "Arco",
+        "tipo": "Arquero",
+        "armadura": null,
         "imagenes": [
             {
                 "src": "",
@@ -431,9 +457,11 @@
     {
         "id": "14",
         "nombre": "Inventor",
-        "descripcion": "",
-        "nivel": "",
-        "arma": "",
+        "descripcion": ". Constrúyelo con armadura de tanque + alma de armadura de tanque. Use la runa Flame en él si lo usa, ya que tiene un silencio oculto cuando se combina con una escopeta.",
+        "nivel": "Interesante",
+        "arma": "Escopeta",
+        "tipo": "Arquero",
+        "armadura": null,
         "imagenes": [
             {
                 "src": "",
@@ -464,9 +492,11 @@
     {
         "id": "15",
         "nombre": "Encantador de serpientes",
-        "descripcion": "",
-        "nivel": "",
-        "arma": "",
+        "descripcion": ". Tiene una salida de daño decente, puede rivalizar con el daño de Oráculo o Incinerador si se construye correctamente. Arroja muchos efectos negativos sobre todos los enemigos. Funciona bien con un Nigromante en el escuadrón. Los efectos negativos no son tan fuertes contra equipos con elementos que eliminan estos efectos.",
+        "nivel": "Olvidable",
+        "arma": "Orbe",
+        "tipo": "Mago",
+        "armadura": null,
         "imagenes": [
             {
                 "src": "",
@@ -497,9 +527,11 @@
     {
         "id": "16",
         "nombre": "Sacerdote",
-        "descripcion": "",
-        "nivel": "",
-        "arma": "",
+        "descripcion": ". El aumento de daño es bastante bueno, pero el beneficio de curación no es tan bueno y si tienes el artefacto Pizza es insignificante. Hace que 1un luchador aliado sea inmune a algunos efectos negativos de control como el miedo, aturdimientos y control mental.",
+        "nivel": "Olvidable",
+        "arma": "Varita",
+        "tipo": "Mago",
+        "armadura": null,
         "imagenes": [
             {
                 "src": "",
@@ -530,9 +562,11 @@
     {
         "id": "17",
         "nombre": "Cazador de Demonios",
-        "descripcion": "",
-        "nivel": "",
-        "arma": "",
+        "descripcion": ". El lobo grande al comienzo de la batalla ayuda bastante, ya que a menudo es el objetivo de una varita de ángel enemiga, lo que les da a tus luchadores más tiempo para prepararse para el próximo lanzamiento de varita de ángel. Engendra un lobo más pequeño de vez en cuando que ayuda a tanquear un poco, pero no es tan bueno. También carece de bonificaciones de daño, por lo que no inflige mucho daño en comparación con los conjuntos más populares.",
+        "nivel": "Olvidable",
+        "arma": "Ballesta",
+        "tipo": "Arquero",
+        "armadura": null,
         "imagenes": [
             {
                 "src": "",
@@ -563,9 +597,11 @@
     {
         "id": "18",
         "nombre": "Bastión",
-        "descripcion": "",
-        "nivel": "",
-        "arma": "",
+        "descripcion": ". Tanque robusto con mucho control pero que hace casi 0 daños. Paladín también hace cerca de 0 daños, pero Paladín otorga beneficios importantes, Bastion no.",
+        "nivel": "Olvidable",
+        "arma": "Espada",
+        "tipo": "Tanque",
+        "armadura": null,
         "imagenes": [
             {
                 "src": "",
@@ -595,10 +631,12 @@
     },
     {
         "id": "19",
-        "nombre": "Guardabosque",
-        "descripcion": "",
-        "nivel": "",
-        "arma": "",
+        "nombre": "Guarda",
+        "descripcion": ". Bajo daño, muere fácilmente. Las granadas son medianamente efectivas.",
+        "nivel": "Olvidable",
+        "arma": "Arco",
+        "tipo": "Arquero",
+        "armadura": null,
         "imagenes": [
             {
                 "src": "",
@@ -629,9 +667,11 @@
     {
         "id": "20",
         "nombre": "Eclipse",
-        "descripcion": "",
-        "nivel": "",
-        "arma": "",
+        "descripcion": ". Conjunto de expedición: requieren mucho tiempo finalizarlo. Solo podemos comprar 1 esencia de material por semana. Se pueden obtener algunas más en el cofre al ganar una expedición, si se tiene suerte. Burro vende estas Esencias.",
+        "nivel": "Sin información",
+        "arma": "Maza",
+        "tipo": "Tanque",
+        "armadura": null,
         "imagenes": [
             {
                 "src": "",
@@ -662,9 +702,11 @@
     {
         "id": "21",
         "nombre": "Rey sin nombre",
-        "descripcion": "",
-        "nivel": "",
-        "arma": "",
+        "descripcion": ". Requiere almas MUY oscuras",
+        "nivel": "Sin información",
+        "arma": "Lanza",
+        "tipo": "Tanque",
+        "armadura": null,
         "imagenes": [
             {
                 "src": "",
@@ -695,9 +737,11 @@
     {
         "id": "22",
         "nombre": "Van Hellsong",
-        "descripcion": "",
-        "nivel": "",
-        "arma": "",
+        "descripcion": ". Conjunto de expedición: requieren mucho tiempo finalizarlo. Solo podemos comprar 1 esencia de material por semana. Se pueden obtener algunas más en el cofre al ganar una expedición, si se tiene suerte. Burro vende estas Esencias.",
+        "nivel": "Sin información",
+        "arma": "Arco",
+        "tipo": "Arquero",
+        "armadura": null,
         "imagenes": [
             {
                 "src": "",
@@ -728,9 +772,11 @@
     {
         "id": "23",
         "nombre": "Dragoniano",
-        "descripcion": "",
-        "nivel": "",
-        "arma": "",
+        "descripcion": ".",
+        "nivel": "Sin información",
+        "arma": "Ballesta",
+        "tipo": "Arquero",
+        "armadura": null,
         "imagenes": [
             {
                 "src": "",
@@ -761,9 +807,11 @@
     {
         "id": "24",
         "nombre": "Raptor",
-        "descripcion": "",
-        "nivel": "",
-        "arma": "",
+        "descripcion": ". Conjunto de expedición: requieren mucho tiempo finalizarlo. Solo podemos comprar 1 esencia de material por semana. Se pueden obtener algunas más en el cofre al ganar una expedición, si se tiene suerte. Burro vende estas Esencias.",
+        "nivel": "Sin información",
+        "arma": "Arco",
+        "tipo": "Arquero",
+        "armadura": null,
         "imagenes": [
             {
                 "src": "",
@@ -794,9 +842,11 @@
     {
         "id": "25",
         "nombre": "Piromante",
-        "descripcion": "",
-        "nivel": "",
-        "arma": "",
+        "descripcion": ".",
+        "nivel": "Sin información",
+        "arma": "Escopeta",
+        "tipo": "Arquero",
+        "armadura": null,
         "imagenes": [
             {
                 "src": "",
@@ -827,9 +877,11 @@
     {
         "id": "26",
         "nombre": "Octomano",
-        "descripcion": "",
-        "nivel": "",
-        "arma": "",
+        "descripcion": ". Conjunto de expedición: requieren mucho tiempo finalizarlo. Solo podemos comprar 1 esencia de material por semana. Se pueden obtener algunas más en el cofre al ganar una expedición, si se tiene suerte. Burro vende estas Esencias.",
+        "nivel": "Sin información",
+        "arma": "Orbe",
+        "tipo": "Mago",
+        "armadura": null,
         "imagenes": [
             {
                 "src": "",
@@ -860,9 +912,11 @@
     {
         "id": "27",
         "nombre": "Fullero",
-        "descripcion": "",
-        "nivel": "",
-        "arma": "",
+        "descripcion": ". Al principio hubo mucha especulación de que este conjunto cambiaría por completo el META, sin embargo hasta ahora eso no ha sucedido; el conjunto EoL es más popular.",
+        "nivel": "Sin información",
+        "arma": "Orbe",
+        "tipo": "Mago",
+        "armadura": null,
         "imagenes": [
             {
                 "src": "",
@@ -893,9 +947,11 @@
     {
         "id": "28",
         "nombre": "Sectario",
-        "descripcion": "",
-        "nivel": "",
-        "arma": "",
+        "descripcion": ". Conjunto de expedición: requieren mucho tiempo finalizarlo. Solo podemos comprar 1 esencia de material por semana. Se pueden obtener algunas más en el cofre al ganar una expedición, si se tiene suerte. Burro vende estas Esencias.",
+        "nivel": "Sin información",
+        "arma": "Libro",
+        "tipo": "Mago",
+        "armadura": null,
         "imagenes": [
             {
                 "src": "",
