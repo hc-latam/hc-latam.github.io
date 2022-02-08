@@ -359,8 +359,8 @@
         "armadura": null,
         "imagenes": [
             {
-                "src": "",
-                "alt": ""
+                "src": "nigromante.png",
+                "alt": "Nigromante"
             },
             {
                 "src": "",
@@ -574,7 +574,7 @@
             },
             {
                 "src": "",
-                "alt": ""
+                "alt": "Pez Diablo"
             },
             {
                 "src": "",
@@ -954,8 +954,8 @@
         "armadura": null,
         "imagenes": [
             {
-                "src": "",
-                "alt": ""
+                "src": "sectario.png",
+                "alt": "Sectario"
             },
             {
                 "src": "",
