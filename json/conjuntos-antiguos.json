@@ -114,8 +114,8 @@
         "armadura": null,
         "imagenes": [
             {
-                "src": "",
-                "alt": ""
+                "src": "aniquilador.png",
+                "alt": "Aniquilador"
             },
             {
                 "src": "",
@@ -149,8 +149,8 @@
         "armadura": "Arquero",
         "imagenes": [
             {
-                "src": "",
-                "alt": ""
+                "src": "legionario.png",
+                "alt": "Legionario"
             },
             {
                 "src": "",
@@ -429,8 +429,8 @@
         "armadura": null,
         "imagenes": [
             {
-                "src": "",
-                "alt": ""
+                "src": "muerte-gelida.png",
+                "alt": "Muerte Gélida"
             },
             {
                 "src": "",
@@ -464,8 +464,8 @@
         "armadura": null,
         "imagenes": [
             {
-                "src": "",
-                "alt": ""
+                "src": "inventor.png",
+                "alt": "Inventor"
             },
             {
                 "src": "",
@@ -604,8 +604,8 @@
         "armadura": null,
         "imagenes": [
             {
-                "src": "",
-                "alt": ""
+                "src": "bastion.png",
+                "alt": "Bastión"
             },
             {
                 "src": "",
@@ -639,8 +639,8 @@
         "armadura": null,
         "imagenes": [
             {
-                "src": "",
-                "alt": ""
+                "src": "guarda.png",
+                "alt": "Guarda"
             },
             {
                 "src": "",
@@ -709,8 +709,8 @@
         "armadura": null,
         "imagenes": [
             {
-                "src": "",
-                "alt": ""
+                "src": "rey-sin-nombre.png",
+                "alt": "Rey sin nombre"
             },
             {
                 "src": "",
@@ -779,8 +779,8 @@
         "armadura": null,
         "imagenes": [
             {
-                "src": "",
-                "alt": ""
+                "src": "dragoniano.png",
+                "alt": "Dragoniano"
             },
             {
                 "src": "",
@@ -814,8 +814,8 @@
         "armadura": null,
         "imagenes": [
             {
-                "src": "",
-                "alt": ""
+                "src": "raptor.png",
+                "alt": "Raptor"
             },
             {
                 "src": "",
@@ -849,8 +849,8 @@
         "armadura": null,
         "imagenes": [
             {
-                "src": "",
-                "alt": ""
+                "src": "piromante.png",
+                "alt": "Piromante"
             },
             {
                 "src": "",
