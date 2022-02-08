@@ -33,7 +33,7 @@ function generarConjunto(nombre, descripcion, nivel, arma, imagenes) {
         "<img class='esencia-azul' src='img/conjuntos-antiguos/esencias/" + imagenes[5].src + "' alt='" + imagenes[5].alt + "'>"+
       "</div><div class='col-md-8'><div class='card-body'>"+
           "<h4 class='card-title amarilloso'>" + nombre + "</h4>"+
-          "<p class='card-text gris'><b class='blanco'>"+nivel+"</b>"+ descripcion +"</p>"+
+          "<p class='card-text gris'><b class='nivel blanco'>"+nivel+"</b>"+ descripcion +"</p>"+
           "<p class='card-text petroleo'><b>Tipo de arma: </b>"+ arma +"</p>"+
         "</div></div></div>")
 

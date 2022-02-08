@@ -3,6 +3,12 @@ body {
     background-color: transparent;
     text-align: center;
 }
+.btn-group-fab {
+    display: none;
+}
+#buscador {
+    display: none;
+}
 .card {
     border: 5px solid #00838E;
     border-radius: 16px;
@@ -81,10 +87,6 @@ ul> li:before {
     color: #e7a72a;
 }
 
-#buscador {
-    display: none;
-}
-
 h5 {
     font-weight: bold;
 }
@@ -118,8 +120,4 @@ h1, h6, h3 {
         -moz-column-count: 4;
         column-count: 4;
     }
-}
-
-.btn-group-fab {
-    display: none;
 }

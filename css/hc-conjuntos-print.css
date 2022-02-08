@@ -62,3 +62,10 @@ h1 {
 .card-columns .card img.esencia-azul {
     width: 30px;
 }
+
+.btn-group-fab {
+    display: none;
+}
+#buscador {
+    display: none;
+}

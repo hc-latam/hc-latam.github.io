@@ -62,3 +62,43 @@ h1 {
 .card-columns .card img.esencia-azul {
     width: 40px;
 }
+
+#buscador {
+    margin: 10px auto;
+}
+.form-control {
+    color: #FFF;
+    background-color: #000;
+    border-color: #C1C1C1;
+    border-radius: 0 .5rem .5rem 0 !important;
+    border-top-width: 3px;
+    border-right-width: 3px;
+    border-bottom-width: 3px;
+    border-left-width: 0px;
+}
+
+.input-group-text {
+    color: #000;
+    background-color: #C1C1C1;
+    border: 1px solid #C1C1C1;
+    border-top-left-radius: .5rem !important;
+    border-bottom-left-radius: .5rem !important;
+}
+
+.form-control:focus {
+    color: #FFF;
+    background-color: #4f4f4f;
+    border-color: transparent;
+    box-shadow: 0 0 0 0.2rem #b9bbbb78;
+}
+
+.btn {
+    margin-left: 20px;
+    border-radius: .5rem;
+}
+.btn-light {
+    color: #555;
+}
+.btn-light:not(:disabled):not(.disabled).active {
+    color: #000000;
+}
