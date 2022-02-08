@@ -1,7 +1,7 @@
 $('#buscar').on('keyup',function () {
-    $('.card').show();
+    $('.card').removeClass('d-none');
     var filter = $(this).val().toUpperCase();
-    $('#contenedor').find(".card-title:not(:contains(" + filter + "))").parent().parent().parent().parent().addClass('d-none');
+    $('#contenedor').find(".card-title:not(:contains(" + filter + "))").parent().parent().parent().parent().parent().addClass('d-none');
 });
 
 $('#indispensable').click(function () {
@@ -9,7 +9,7 @@ $('#indispensable').click(function () {
     $('#buscar').val('');
     $('.btn-group .active').removeClass('active');
     $(this).addClass('active');
-    $('#contenedor').find(".nivel:not(:contains('Indispensable'))").parent().parent().parent().parent().toggleClass('d-none');
+    $('#contenedor').find(".nivel:not(:contains('Indispensable'))").parent().parent().parent().parent().parent().toggleClass('d-none');
 });
 
 $('#interesante').click(function () {
@@ -17,7 +17,7 @@ $('#interesante').click(function () {
     $('#buscar').val('');
     $('.btn-group .active').removeClass('active');
     $(this).addClass('active');
-    $('#contenedor').find(".nivel:not(:contains('Interesante'))").parent().parent().parent().parent().toggleClass('d-none');
+    $('#contenedor').find(".nivel:not(:contains('Interesante'))").parent().parent().parent().parent().parent().toggleClass('d-none');
 });
 
 $('#olvidable').click(function () {
@@ -25,7 +25,7 @@ $('#olvidable').click(function () {
     $('#buscar').val('');
     $('.btn-group .active').removeClass('active');
     $(this).addClass('active');
-    $('#contenedor').find(".nivel:not(:contains('Olvidable'))").parent().parent().parent().parent().toggleClass('d-none');
+    $('#contenedor').find(".nivel:not(:contains('Olvidable'))").parent().parent().parent().parent().parent().toggleClass('d-none');
 });
 
 $('#sin-info').click(function () {
@@ -33,5 +33,5 @@ $('#sin-info').click(function () {
     $('#buscar').val('');
     $('.btn-group .active').removeClass('active');
     $(this).addClass('active');
-    $('#contenedor').find(".nivel:not(:contains('Sin información'))").parent().parent().parent().parent().toggleClass('d-none');
+    $('#contenedor').find(".nivel:not(:contains('Sin información'))").parent().parent().parent().parent().parent().toggleClass('d-none');
 });
