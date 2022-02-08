@@ -79,8 +79,8 @@
         "armadura": null,
         "imagenes": [
             {
-                "src": "",
-                "alt": ""
+                "src": "darkula.png",
+                "alt": "Dárkula"
             },
             {
                 "src": "",
@@ -184,8 +184,8 @@
         "armadura": null,
         "imagenes": [
             {
-                "src": "",
-                "alt": ""
+                "src": "tormento.png",
+                "alt": "Tormento"
             },
             {
                 "src": "",
@@ -324,8 +324,8 @@
         "armadura": null,
         "imagenes": [
             {
-                "src": "",
-                "alt": ""
+                "src": "ilusionista.png",
+                "alt": "Ilusionista"
             },
             {
                 "src": "",
@@ -364,7 +364,7 @@
             },
             {
                 "src": "",
-                "alt": ""
+                "alt": "Necronomicón"
             },
             {
                 "src": "",
@@ -569,8 +569,8 @@
         "armadura": null,
         "imagenes": [
             {
-                "src": "",
-                "alt": ""
+                "src": "cazador-demonios.png",
+                "alt": "Cazador de demonios"
             },
             {
                 "src": "",
@@ -884,8 +884,8 @@
         "armadura": null,
         "imagenes": [
             {
-                "src": "",
-                "alt": ""
+                "src": "octomano.png",
+                "alt": "Octomano"
             },
             {
                 "src": "",
@@ -919,8 +919,8 @@
         "armadura": null,
         "imagenes": [
             {
-                "src": "",
-                "alt": ""
+                "src": "fullero.png",
+                "alt": "Fullero"
             },
             {
                 "src": "",
