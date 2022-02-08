@@ -1,37 +1,65 @@
+jQuery.expr[':'].contains = function(a, i, m) {
+    return jQuery(a).text().toUpperCase()
+        .indexOf(m[3].toUpperCase()) >= 0;
+   };
+
 $('#buscar').on('keyup',function () {
     $('.card').removeClass('d-none');
     var filter = $(this).val().toUpperCase();
-    $('#contenedor').find(".card-title:not(:contains(" + filter + "))").parent().parent().parent().parent().parent().addClass('d-none');
+    $('#contenedor').find(".card-title:not(:contains(" + filter + "))").parent().parent().parent().parent().addClass('d-none');
 });
 
 $('#indispensable').click(function () {
-    $('.card').show();
     $('#buscar').val('');
     $('.btn-group .active').removeClass('active');
-    $(this).addClass('active');
-    $('#contenedor').find(".nivel:not(:contains('Indispensable'))").parent().parent().parent().parent().parent().toggleClass('d-none');
+    $('.card').removeClass('d-none');
+
+    if (!$(this).hasClass('active')) {
+        $('.btn-group .active').removeClass('active');
+        $(this).addClass('active');
+        $('#contenedor').find(".nivel:not(:contains('Indispensable'))").parent().parent().parent().parent().parent().toggleClass('d-none');
+    } else {
+        $('.btn-group .active').removeClass('active');
+    }
 });
 
-$('#interesante').click(function () {
-    $('.card').show();
+$('#honroso').click(function () {
     $('#buscar').val('');
     $('.btn-group .active').removeClass('active');
-    $(this).addClass('active');
-    $('#contenedor').find(".nivel:not(:contains('Interesante'))").parent().parent().parent().parent().parent().toggleClass('d-none');
+    $('.card').removeClass('d-none');
+
+    if (!$(this).hasClass('active')) {
+        $('.btn-group .active').removeClass('active');
+        $(this).addClass('active');
+        $('#contenedor').find(".nivel:not(:contains('Honroso'))").parent().parent().parent().parent().parent().toggleClass('d-none');
+    } else {
+        $('.btn-group .active').removeClass('active');
+    }
 });
 
 $('#olvidable').click(function () {
-    $('.card').show();
     $('#buscar').val('');
     $('.btn-group .active').removeClass('active');
-    $(this).addClass('active');
-    $('#contenedor').find(".nivel:not(:contains('Olvidable'))").parent().parent().parent().parent().parent().toggleClass('d-none');
+    $('.card').removeClass('d-none');
+
+    if (!$(this).hasClass('active')) {
+        $('.btn-group .active').removeClass('active');
+        $(this).addClass('active');
+        $('#contenedor').find(".nivel:not(:contains('Olvidable'))").parent().parent().parent().parent().parent().toggleClass('d-none');
+    } else {
+        $('.btn-group .active').removeClass('active');
+    }
 });
 
 $('#sin-info').click(function () {
-    $('.card').removeClass('d-none');
     $('#buscar').val('');
-    $('.btn-group .active').removeClass('active');
-    $(this).addClass('active');
-    $('#contenedor').find(".nivel:not(:contains('Sin información'))").parent().parent().parent().parent().parent().toggleClass('d-none');
+    $('.card').removeClass('d-none');
+
+    if (!$(this).hasClass('active')) {
+        $('.btn-group .active').removeClass('active');
+        $(this).addClass('active');
+        $('#contenedor').find(".nivel:not(:contains('Sin información'))").parent().parent().parent().parent().parent().toggleClass('d-none');
+    } else {
+        $('.btn-group .active').removeClass('active');
+    }
 });
