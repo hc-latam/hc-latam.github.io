@@ -4,7 +4,6 @@ $(document).ready(function() {
 
 function obtenerListadoConjunto() {
     $.getJSON("json/conjuntos-antiguos.json", function(conjuntos){
-            console.log(conjuntos)
             listarConjuntos(conjuntos);
     }).fail(function(){
         console.log("Error al leer el json");
@@ -27,8 +26,7 @@ function listarConjuntos(conjuntos) {
         }
 
         if (conjunto.armadura == "Arquero") {
-            console.log("Tanque arquero");
-            console.log(tarjetaConstruida.find('.verde'))
+            console.log("Pinta?");
             tarjetaConstruida.find('verde').html("<b>Tipo de armadura: </b>"+ conjunto.armadura);
         }
         
