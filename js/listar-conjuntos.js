@@ -27,7 +27,9 @@ function listarConjuntos(conjuntos) {
         }
 
         if (conjunto.armadura == "Arquero") {
-            tarjetaConstruida.find('verde').html("<b>Tipo de armadura: </b>"+ conjunto.armadura)
+            console.log("Tanque arquero");
+            console.log(tarjetaConstruida.find('.verde'))
+            tarjetaConstruida.find('verde').html("<b>Tipo de armadura: </b>"+ conjunto.armadura);
         }
         
         contenedor.append(tarjetaConstruida)
@@ -46,8 +48,8 @@ function generarConjunto(nombre, descripcion, nivel, arma, imagenes) {
       "</div><div class='col-md-8'><div class='card-body'>"+
           "<h4 class='card-title amarilloso'>" + nombre + "</h4>"+
           "<p class='card-text gris'><b class='nivel blanco'>"+nivel+"</b>"+ descripcion +"</p>"+
-          "<p class='card-text petroleo'><b>Tipo de arma: </b>"+ arma +"</p>"+
-          "<p class='card-text verde'></p>"+
+          "<p class='card-text petroleo'><b>Tipo de arma: </b>"+ arma +"<br />"+
+          "<span class='card-text verde'></span></p>"+
         "</div></div></div>")
 
     return tarjeta    
