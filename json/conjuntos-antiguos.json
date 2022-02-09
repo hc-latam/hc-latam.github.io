@@ -219,8 +219,8 @@
         "armadura": null,
         "imagenes": [
             {
-                "src": "",
-                "alt": ""
+                "src": "ejecutor-luz.png",
+                "alt": "Ejecutor de la Luz"
             },
             {
                 "src": "",
@@ -254,8 +254,8 @@
         "armadura": "Arquero",
         "imagenes": [
             {
-                "src": "",
-                "alt": ""
+                "src": "tormenta.png",
+                "alt": "Tormenta"
             },
             {
                 "src": "",
@@ -289,8 +289,8 @@
         "armadura": "Arquero",
         "imagenes": [
             {
-                "src": "",
-                "alt": ""
+                "src": "sombra.png",
+                "alt": "Sombra"
             },
             {
                 "src": "",
@@ -674,8 +674,8 @@
         "armadura": null,
         "imagenes": [
             {
-                "src": "",
-                "alt": ""
+                "src": "eclipse.png",
+                "alt": "Eclipse"
             },
             {
                 "src": "",
@@ -744,8 +744,8 @@
         "armadura": null,
         "imagenes": [
             {
-                "src": "",
-                "alt": ""
+                "src": "van-hellsong.png",
+                "alt": "Van Hellsong"
             },
             {
                 "src": "",
