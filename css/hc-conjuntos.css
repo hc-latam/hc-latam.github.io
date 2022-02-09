@@ -117,3 +117,6 @@ h1 {
 .card-columns .arquero {
     border-color: #1FDD63;
 }
+p.verde {
+    margin: -1rem;
+}
