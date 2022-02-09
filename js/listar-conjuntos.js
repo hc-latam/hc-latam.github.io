@@ -26,7 +26,7 @@ function listarConjuntos(conjuntos) {
         }
 
         if (conjunto.armadura == "Arquero") {
-            console.log("Pinta?");
+            console.log("Pintando");
             tarjetaConstruida.find('verde').html("<b>Tipo de armadura: </b>"+ conjunto.armadura);
         }
         
