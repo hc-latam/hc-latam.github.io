@@ -2,29 +2,11 @@ var jefes;
 
 $(document).ready(function() {
     //obtenerListadoGET();
-    obtenerListadoJSON();
+    obtenerListadoJefes();
     $('.bus2').addClass('d-none')
 });
 
-/*
-function obtenerListadoGET(){
-    $.get({
-        url: "https://aaravena.laboratoriodiseno.cl/js2020/api/modelo/listar.php?tabla=jefes_mazmorras",
-        success: function(listado){
-            jefes = $.parseJSON(listado)
-            console.log(jefes)
-            listarJefes();
-        },
-        error: function(error){
-            console.error("Error del servicio")
-            console.log(error)
-        }
-    })
-    
-}
-*/
-
-function obtenerListadoJSON() {
+function obtenerListadoJefes() {
     $.getJSON("json/jefes-mazmorras.json", function(listado){
             jefes = listado
             console.log(jefes)
