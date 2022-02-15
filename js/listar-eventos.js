@@ -15,7 +15,7 @@ function obtenerListadoEventos(){
             $.each(eventos, function(i, evento) {
                 var div = $('<div></div>').addClass('evento')
                 var tit = $('<h4></h4>').text(evento.nombre)
-                var img = $('<img />').attr('src', evento.imagen)
+                var img = $('<img />').attr('src', 'img/eventos/' + evento.imagen)
 
                 div.append(tit).append(img)
                 contenedor.append(div)
