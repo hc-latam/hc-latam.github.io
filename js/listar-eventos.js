@@ -7,10 +7,10 @@ $(document).ready(function() {
 function obtenerListadoEventos(){
     $.get({
         url: "https://hc.infobreras.org/listar.php?t=eventos",
-        success: function(listado){
-            console.log(listado);
-            eventos = $.parseJSON(listado)
-            console.log(eventos)
+        success: function(eventos){
+            console.log(eventos);
+            eventos = listado
+
             var contenedor = $('#contenedor');
 
             $.each(eventos, function(i, evento) {
