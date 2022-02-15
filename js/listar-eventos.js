@@ -9,7 +9,6 @@ function obtenerListadoEventos(){
         url: "https://hc.infobreras.org/listar.php?t=eventos",
         success: function(eventos){
             console.log(eventos);
-            eventos = listado
 
             var contenedor = $('#contenedor');
 
