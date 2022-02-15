@@ -6,8 +6,9 @@ body {
 }
 
 .evento {
-    border: 3px #C1C1C1 solid;
+    border: 3px #dc3545 solid;
     border-radius: 20px;
     padding: 20px 10px;
     margin: 5px;
+    background-color: #dc3545;
 }
