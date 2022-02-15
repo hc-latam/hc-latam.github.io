@@ -8,8 +8,8 @@ function obtenerListadoEventos(){
     $.get({
         url: "https://hc.infobreras.org/listar.php?t=eventos",
         success: function(listado){
-            eventos = $.parseJSON(eventos)
-            console.log(jefes)
+            eventos = $.parseJSON(listado)
+            console.log(eventos)
         },
         error: function(error){
             console.error("Error del servicio")
