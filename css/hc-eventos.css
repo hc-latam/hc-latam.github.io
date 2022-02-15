@@ -1,0 +1,13 @@
+body {
+    font-family: 'Nunito', sans-serif;
+    background-color: #AF1200;
+    text-align: center;
+    color: #FFF;
+}
+
+.evento {
+    border: 3px #C1C1C1 solid;
+    border-radius: 20px;
+    padding: 20px 10px;
+    margin: 5px;
+}
