@@ -32,7 +32,15 @@ function listarConjuntos(conjuntos) {
     contenedor.empty()
 
     $.each(conjuntos, function (i, conjunto) {
-        var tarjetaConstruida = generarConjunto(conjunto.nombre, conjunto.descripcion, conjunto.nivel, conjunto.arma, conjunto.imagenes);
+
+        var imagenes = [
+            { src: conjunto.esencia_img, alt: esencia_alt},
+            { src: conjunto.material_legendario_img, alt: material_legendario_alt},
+            { src: conjunto.material_epico_img, alt: material_epico_alt},
+            { src: conjunto.material_raro1_img, alt: material_raro1_alt},
+            { src: conjunto.material_raro2_img, alt: material_raro2_alt}
+        ]
+        var tarjetaConstruida = generarConjunto(conjunto.nombre, conjunto.descripcion, conjunto.nivel, conjunto.arma, imagenes);
 
         if (conjunto.tipo == "Tanque") {
             tarjetaConstruida.addClass('tanque');
