@@ -34,6 +34,7 @@ function listarConjuntos(conjuntos) {
     $.each(conjuntos, function (i, conjunto) {
 
         var imagenes = [
+            { src: conjunto.armadura_img, alt: conjunto.armadura_alt},
             { src: conjunto.esencia_img, alt: conjunto.esencia_alt},
             { src: conjunto.material_legendario_img, alt: conjunto.material_legendario_alt},
             { src: conjunto.material_epico_img, alt: conjunto.material_epico_alt},
