@@ -69,7 +69,7 @@ function generarConjunto(nombre, descripcion, nivel, arma, imagenes) {
         "<img class='armadura' src='img/conjuntos-antiguos/" + imagenes[0].src + "' alt='" + imagenes[0].alt + "'><br />" +
         "<img class='esencia' src='img/conjuntos-antiguos/esencias/" + imagenes[1].src + "' alt='" + imagenes[1].alt + "'><br />" +
         "<img src='img/conjuntos-antiguos/materiales/legendario/" + imagenes[2].src + "' alt='" + imagenes[2].alt + "'>" +
-        "<img src='img/conjuntos-antiguos/materiales/epico/" + imagenes[3].src + "' alt='" + imagenes[3].alt + "'>" +
+        "<img src='img/conjuntos-antiguos/materiales/epico/" + imagenes[3].src + "' alt='" + imagenes[3].alt + "'><br />" +
         "<img class='esencia-azul' src='img/conjuntos-antiguos/materiales/raro/" + imagenes[4].src + "' alt='" + imagenes[4].alt + "'>" +
         "<img class='esencia-azul' src='img/conjuntos-antiguos/materiales/raro/" + imagenes[5].src + "' alt='" + imagenes[5].alt + "'>" +
         "</div><div class='col-md-8'><div class='card-body'>" +

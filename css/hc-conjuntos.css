@@ -50,7 +50,7 @@ h1 {
 }
 
 .card-columns .card img {
-    width: 50px;
+    width: 80px;
     margin-bottom: 5px;
     margin-right: 3px;
 }
@@ -63,7 +63,7 @@ h1 {
     margin-right: 0px;
 }
 .card-columns .card img.esencia-azul {
-    width: 40px;
+    width: 50px;
 }
 
 #buscador {
