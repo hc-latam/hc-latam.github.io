@@ -63,8 +63,6 @@ function listarConjuntos(conjuntos) {
 
 function generarConjunto(nombre, descripcion, nivel, arma, imagenes) {
 
-    console.log(imagenes)
-
     var tarjeta = $("<div class='card mb-3'></div>").html("<div class='row no-gutters'><div class='col-md-4 imagenes'>" +
         "<img class='armadura' src='img/conjuntos-antiguos/" + imagenes[0].src + "' alt='" + imagenes[0].alt + "'><br />" +
         "<img class='esencia' src='img/conjuntos-antiguos/esencias/" + imagenes[1].src + "' alt='" + imagenes[1].alt + "'><br />" +
