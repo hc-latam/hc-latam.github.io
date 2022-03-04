@@ -46,19 +46,19 @@ function crearTarjetaEvento(nombre, logo, fecha, artefacto, joyeria, armaduras, 
     "<ul class='list-group list-group-flush bg-dark mb-0 mt-3'>";
 
     if (artefacto) {
-        contenido += "<li class='list-group-item bg-dark'><img src='img/eventos/artefactos/" + artefacto + "' alt='" + artefacto + "' height='60' class='img-fluid mb-3 shadow-sm'></li>";
+        contenido += "<li class='list-group-item bg-dark p-0 artefacto'><img src='img/eventos/artefactos/" + artefacto + "' alt='" + artefacto + "' class='img-fluid mb-3'></li>";
     }
     if (joyeria) {
-        contenido += "<li class='list-group-item bg-dark'><img src='img/eventos/joyeria/" + joyeria + "' alt='" + joyeria + "' height='60' class='img-fluid mb-3 shadow-sm'></li>";
+        contenido += "<li class='list-group-item bg-dark p-0 joyeria'><img src='img/eventos/joyeria/" + joyeria + "' alt='" + joyeria + "' class='img-fluid mb-3'></li>";
     }
     if (armaduras) {
-        contenido += "<li class='list-group-item bg-dark'><img src='img/eventos/armaduras/" + armaduras + "' alt='" + armaduras + "' height='60' class='img-fluid mb-3 shadow-sm'></li>";
+        contenido += "<li class='list-group-item bg-dark p-0 armaduras'><img src='img/eventos/armaduras/" + armaduras + "' alt='" + armaduras + "' class='img-fluid mb-3'></li>";
     }
     if (armas) {
-        contenido += "<li class='list-group-item bg-dark'><img src='img/eventos/armas/" + armas + "' alt='" + armas + "' height='60' class='img-fluid mb-3 shadow-sm'></li>";
+        contenido += "<li class='list-group-item bg-dark p-0 armas'><img src='img/eventos/armas/" + armas + "' alt='" + armas + "' class='img-fluid mb-3'></li>";
     }
     if (outfit) {
-        contenido += "<li class='list-group-item bg-dark'><img src='img/eventos/outfit/" + outfit + "' alt='" + outfit + "' height='60' class='img-fluid mb-3 shadow-sm'></li>";
+        contenido += "<li class='list-group-item bg-dark p-0 outfit'><img src='img/eventos/outfit/" + outfit + "' alt='" + outfit + "' class='img-fluid mb-3'></li>";
     }
     
     contenido += "</ul></div></div>";
