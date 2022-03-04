@@ -40,9 +40,13 @@ function crearTarjetaEvento(nombre, logo, fecha, artefacto, joyeria, armaduras, 
         fecha='';
     }
 
-    var contenido = "<div class='col-xl-3 col-sm-6 mb-5'><div class='bg-dark rounded shadow-sm py-5 px-4'>" +
-    "<img src='img/eventos/" + logo + "' alt='" + nombre + "' width='150' class='img-fluid rounded-circle mb-3 img-thumbnail shadow-sm bg-dark'>"+
-    "<h5 class='mb-0'>" + nombre + "</h5><span class='small text-uppercase text-muted'>" + fecha + "</span>"+
+    var contenido = "<div class='col-xl-3 col-sm-6 mb-5'><div class='bg-dark rounded shadow-sm py-5 px-4'>";
+
+    if (logo) {
+        contenido += "<img src='img/eventos/" + logo + "' alt='" + nombre + "' width='150' class='img-fluid rounded-circle mb-3 img-thumbnail shadow-sm bg-dark'>";
+    }
+    
+    contenido += "<h5 class='mb-0'>" + nombre + "</h5><span class='small text-uppercase text-muted'>" + fecha + "</span>"+
     "<ul class='list-group list-group-flush bg-dark mb-0 mt-3'>";
 
     if (artefacto) {
