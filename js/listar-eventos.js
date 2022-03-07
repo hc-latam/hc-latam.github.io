@@ -19,10 +19,11 @@ function obtenerListadoEventos(){
                     evento.imagen,
                     evento.fecha,
                     evento.artefacto,
-                    evento.joyeria,
+                    evento.joyas,
                     evento.armaduras,
                     evento.armas,
-                    evento.outfit
+                    evento.extras,
+                    evento.outfit,
                 ))
             })
         },
@@ -34,7 +35,7 @@ function obtenerListadoEventos(){
     
 }
 
-function crearTarjetaEvento(nombre, logo, fecha, artefacto, joyeria, armaduras, armas, outfit) {
+function crearTarjetaEvento(nombre, logo, fecha, artefacto, joyeria, armaduras, armas, extras, outfit) {
 
     if (fecha==null) {
         fecha='';
@@ -61,9 +62,13 @@ function crearTarjetaEvento(nombre, logo, fecha, artefacto, joyeria, armaduras, 
     if (armas) {
         contenido += "<li class='list-group-item bg-dark p-0 border-0 armas'><img src='img/eventos/armas/" + armas + "' alt='" + armas + "' class='img-fluid mb-3'></li>";
     }
+    if (extras) {
+        contenido += "<li class='list-group-item bg-dark p-0 border-0 armas'><img src='img/eventos/extras/" + extras + "' alt='" + extras + "' class='img-fluid mb-3'></li>";
+    }
+    /*
     if (outfit) {
         contenido += "<li class='list-group-item bg-dark p-0 border-0 outfit'><img src='img/eventos/outfit/" + outfit + "' alt='" + outfit + "' class='img-fluid mb-3'></li>";
-    }
+    }*/
     
     contenido += "</ul></div></div>";
 
