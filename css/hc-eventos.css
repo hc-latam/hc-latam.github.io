@@ -13,9 +13,12 @@ body {
     background-color: #dc3545;
 }
 
-.artefacto img,
-.joyeria img {
+.artefacto img {
     max-width: 35%;
+}
+
+.joyeria img {
+    max-width: 70%;
 }
 
 .armas img,
