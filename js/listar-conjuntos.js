@@ -62,20 +62,23 @@ function listarConjuntos(conjuntos) {
 }
 
 function generarConjunto(nombre, descripcion, nivel, arma, imagenes) {
-
-    var tarjeta = $("<div class='card mb-3'></div>").html("<div class='row no-gutters'><div class='col-md-4 imagenes'>" +
-        "<img class='armadura' src='img/conjuntos-antiguos/" + imagenes[0].src + "' alt='" + imagenes[0].alt + "'><br />" +
-        "<img class='esencia' src='img/conjuntos-antiguos/esencias/" + imagenes[1].src + "' alt='" + imagenes[1].alt + "'><br />" +
-        "<img src='img/conjuntos-antiguos/materiales/legendario/" + imagenes[2].src + "' alt='" + imagenes[2].alt + "'>" +
-        "<img src='img/conjuntos-antiguos/materiales/epico/" + imagenes[3].src + "' alt='" + imagenes[3].alt + "'><br />" +
-        "<img class='esencia-azul' src='img/conjuntos-antiguos/materiales/raro/" + imagenes[4].src + "' alt='" + imagenes[4].alt + "'>" +
-        "<img class='esencia-azul' src='img/conjuntos-antiguos/materiales/raro/" + imagenes[5].src + "' alt='" + imagenes[5].alt + "'>" +
-        "</div><div class='col-md-8'><div class='card-body'>" +
+   
+    var tarjetaString = "<div class='row no-gutters'><div class='col-md-4 imagenes'>"
+    
+    if (imagenes[0].src) tarjetaString += "<img class='armadura' src='img/conjuntos-antiguos/" + imagenes[0].src + "' alt='" + imagenes[0].alt + "'><br />"
+    if (imagenes[1].src) tarjetaString += "<img class='esencia' src='img/conjuntos-antiguos/esencias/" + imagenes[1].src + "' alt='" + imagenes[1].alt + "'><br />"
+    
+    if (imagenes[2].src) tarjetaString += "<img src='img/conjuntos-antiguos/materiales/legendario/" + imagenes[2].src + "' alt='" + imagenes[2].alt + "'>"
+    if (imagenes[3].src) tarjetaString += "<img src='img/conjuntos-antiguos/materiales/epico/" + imagenes[3].src + "' alt='" + imagenes[3].alt + "'><br />"
+    if (imagenes[4].src) tarjetaString += "<img class='esencia-azul' src='img/conjuntos-antiguos/materiales/raro/" + imagenes[4].src + "' alt='" + imagenes[4].alt + "'>"
+    if (imagenes[5].src) tarjetaString += "<img class='esencia-azul' src='img/conjuntos-antiguos/materiales/raro/" + imagenes[5].src + "' alt='" + imagenes[5].alt + "'>"
+    
+    tarjetaString += "</div><div class='col-md-8'><div class='card-body'>" +
         "<h4 class='card-title amarilloso'>" + nombre + "</h4>" +
         "<p class='card-text gris'><b class='nivel blanco'>" + nivel + "</b>" + descripcion + "</p>" +
         "<p class='card-text petroleo'><b>Tipo de arma: </b>" + arma + "</p>" +
         "<p class='card-text verde'></p>" +
-        "</div></div></div>")
+        "</div></div></div>"
 
-    return tarjeta
+    return $("<div class='card mb-3'></div>").html(tarjetaString)
 }
