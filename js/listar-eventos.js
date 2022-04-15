@@ -45,9 +45,9 @@ function crearTarjetaEvento(nombre, logo, fecha, artefacto, joyeria, armaduras, 
     if (logo) contenido += "<img src='img/eventos/" + logo + "' alt='" + nombre + "' width='150' class='img-fluid rounded-circle mb-3 img-thumbnail shadow-sm bg-dark'>";
     
     contenido += "<h5 class='mb-0'>" + nombre + "</h5>"
-    if (tipo == 'martillo') contenido += "<img src='img/eventos/tipos/martillo.png' height='50px' alt='Caza del Tesoro' title='Caza del Tesoro'></img>";
-    if (tipo == 'pase') contenido += "<img src='img/eventos/tipos/pase.png' height='50px' alt='Gran Desafío' title='Gran Desafío'></img>";
-    if (tipo == 'way') contenido += "<img src='img/eventos/tipos/way.png' height='50px' alt='Gran Desafío' title='Camino'></img>";
+
+    if (tipo) contenido += "<img src='img/eventos/tipos/"+tipo+".png' height='50px' alt='"+tipo+"' title='"+tipo+"'></img>";
+
     contenido +="<span class='small text-uppercase text-muted'>" + fecha + "</span>"+
     "<ul class='list-group list-group-flush bg-dark mb-0 mt-3'>";
 
