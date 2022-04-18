@@ -25,3 +25,24 @@ body {
 .armaduras img {
     max-width: 100%;
 }
+
+@media (min-width: 576px) {
+
+    .artefacto img,
+    .joyeria img,
+    .armas img,
+    .armaduras img,
+    .extras img {
+        max-height: 85px;
+    }
+
+}
+
+@media (min-width: 768px) {}
+
+@media (min-width: 992px) {}
+
+@media (min-width: 1200px) {}
+
+
+@media (max-width: 950px) {}
