@@ -5,14 +5,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Eventos</title>
+    <title>Jefes de mazmorras</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
         integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <script src="https://kit.fontawesome.com/9987974c2b.js" crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@600;800&display=swap" rel="stylesheet">
     
     <link rel="stylesheet" type="text/css" href="css/fab-menu.css">
-    <link rel="stylesheet" type="text/css" href="css/hc-eventos.css">
+
+    <link rel="stylesheet" type="text/css" href="css/hc-jefes.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="css/hc-jefes-print.css" media="print" />
 
 </head>
 
@@ -33,18 +35,39 @@
     <header id="encabezado">
         <h6 class="amarilloso"> </h6>
         <h1 class="rojo">Hustle Castle</h1>
-        <h3 class="blanco">Artículos de eventos</h3>
+        <h3 class="blanco">Guía de Jefes de Mazmorras</h3>
     </header>
 
-    <div id="contenedor" class="container">
-        <div class="row text-center">
-            
+    <div class="input-group col-md-7 btn-toolbar" id="buscador">
+        <div class="input-group-prepend bus1">
+            <span class="input-group-text">Buscar:</span>
+        </div>
+        <input type="text" class="form-control searchbox-input bus1" aria-label="Buscar" id="buscar1"
+            aria-describedby="inputGroup-sizing-sm">
+
+        <div class="input-group-prepend bus2">
+            <span class="input-group-text">Buscar:</span>
+        </div>
+        <input type="text" class="form-control searchbox-input bus2" aria-label="Buscar" id="buscar2"
+            aria-describedby="inputGroup-sizing-sm">
+
+        <button type="button" class="btn btn-outline-light" onClick="window.print()">Imprimir</button>
+
+        <div class="btn-group" role="group" aria-label="Horientación">
+            <button type="button" id="horizontal" class="btn btn-light active">Horizontales</button>
+            <button type="button" id="vertical" class="btn btn-light">Verticales</button>
         </div>
     </div>
 
 
+
+    <div id="contenedor" class="card-columns"></div>
+
+
     <footer>
-        &#169; earcuivie - Hustle Castle 2022
+        Fuente: <a href="https://www.reddit.com/r/HustleCastle/comments/j6yfj3/dungeon_boss_cheat_sheet_patch_128/" target="_blanc">Dieselman</a>
+        <br />
+        &#169; earcuivie - Hustle Castle 2020
     </footer>
 
     <!-- Cargar JQUERY-->
@@ -60,7 +83,8 @@
     
     <script src="js/fab-menu.js"></script>
 
-    <script src="js/listar-eventos.js"></script>
+    <script src="js/listar-jefes.js"></script>
+    <script src="js/hc-jefes.js"></script>
 </body>
 
 </html>
