@@ -41,44 +41,48 @@ function listarConjuntos(conjuntos) {
             { src: conjunto.material_raro1_img, alt: conjunto.material_raro1_alt},
             { src: conjunto.material_raro2_img, alt: conjunto.material_raro2_alt}
         ]
-        var tarjetaConstruida = generarConjunto(conjunto.nombre, conjunto.descripcion, conjunto.nivel, conjunto.arma,
-            imagenes);
-
-        if (conjunto.tipo == "Tanque") {
-            tarjetaConstruida.addClass('tanque');
-        } else if (conjunto.tipo == "Mago") {
-            tarjetaConstruida.addClass('mago');
-        } else if (conjunto.tipo == "Arquero") {
-            tarjetaConstruida.addClass('arquero');
-        }
-
-        if (conjunto.armadura == "Arquero") {
-            console.log("Pintando");
-            tarjetaConstruida.find('verde').html("<b>Tipo de armadura: </b>" + conjunto.armadura);
-        }
+        var tarjetaConstruida = generarConjunto(conjunto.tipo, conjunto.nombre, conjunto.descripcion, conjunto.nivel, conjunto.arma,
+            conjunto.armadura, imagenes);
 
         contenedor.append(tarjetaConstruida)
     });
 }
 
-function generarConjunto(nombre, descripcion, nivel, arma, imagenes) {
+function generarConjunto(tipo, nombre, descripcion, nivel, arma, armadura, imagenes) {
+
+    var tarjeta = "<div class='card mb-3 ";
+    if (tipo == "Tanque") {
+        tarjeta += 'tanque'
+    } else if (tipo == "Mago") {
+        tarjeta += 'mago'
+    } else if (tipo == "Arquero") {
+        tarjeta +='arquero'
+    }
+    tarjeta += "'></div>";
+
    
-    var tarjetaString = "<div class='row no-gutters'><div class='col-md-4 imagenes'>"
+    var tarjetaImagenes = "<div class='row no-gutters'><div class='col-md-4 imagenes'>"
     
-    if (imagenes[0].src) tarjetaString += "<img class='armadura' src='img/conjuntos-antiguos/" + imagenes[0].src + "' alt='" + imagenes[0].alt + "'><br />"
-    if (imagenes[1].src) tarjetaString += "<img class='esencia' src='img/conjuntos-antiguos/esencias/" + imagenes[1].src + "' alt='" + imagenes[1].alt + "'><br />"
+    if (imagenes[0].src) tarjetaImagenes += "<img class='armadura' src='img/conjuntos-antiguos/" + imagenes[0].src + "' alt='" + imagenes[0].alt + "'><br />"
+    if (imagenes[1].src) tarjetaImagenes += "<img class='esencia' src='img/conjuntos-antiguos/esencias/" + imagenes[1].src + "' alt='" + imagenes[1].alt + "'><br />"
     
-    if (imagenes[2].src) tarjetaString += "<img src='img/conjuntos-antiguos/materiales/legendario/" + imagenes[2].src + "' alt='" + imagenes[2].alt + "'>"
-    if (imagenes[3].src) tarjetaString += "<img src='img/conjuntos-antiguos/materiales/epico/" + imagenes[3].src + "' alt='" + imagenes[3].alt + "'><br />"
-    if (imagenes[4].src) tarjetaString += "<img class='esencia-azul' src='img/conjuntos-antiguos/materiales/raro/" + imagenes[4].src + "' alt='" + imagenes[4].alt + "'>"
-    if (imagenes[5].src) tarjetaString += "<img class='esencia-azul' src='img/conjuntos-antiguos/materiales/raro/" + imagenes[5].src + "' alt='" + imagenes[5].alt + "'>"
+    if (imagenes[2].src) tarjetaImagenes += "<img src='img/conjuntos-antiguos/materiales/legendario/" + imagenes[2].src + "' alt='" + imagenes[2].alt + "'>"
+    if (imagenes[3].src) tarjetaImagenes += "<img src='img/conjuntos-antiguos/materiales/epico/" + imagenes[3].src + "' alt='" + imagenes[3].alt + "'><br />"
+    if (imagenes[4].src) tarjetaImagenes += "<img class='esencia-azul' src='img/conjuntos-antiguos/materiales/raro/" + imagenes[4].src + "' alt='" + imagenes[4].alt + "'>"
+    if (imagenes[5].src) tarjetaImagenes += "<img class='esencia-azul' src='img/conjuntos-antiguos/materiales/raro/" + imagenes[5].src + "' alt='" + imagenes[5].alt + "'>"
     
-    tarjetaString += "</div><div class='col-md-8'><div class='card-body'>" +
+    tarjetaImagenes += "</div>";
+
+    var tarjetaDescripcion = "<div class='col-md-8'><div class='card-body'>" +
         "<h4 class='card-title amarilloso'>" + nombre + "</h4>" +
         "<p class='card-text gris'><b class='nivel blanco'>" + nivel + "</b>" + descripcion + "</p>" +
-        "<p class='card-text petroleo'><b>Tipo de arma: </b>" + arma + "</p>" +
-        "<p class='card-text verde'></p>" +
-        "</div></div></div>"
+        "<p class='card-text petroleo'><b>Tipo de arma: </b>" + arma + "</p>"
 
-    return $("<div class='card mb-3'></div>").html(tarjetaString)
+        if (armadura == "Arquero") {
+            tarjetaDescripcion += "<p class='card-text verde'><b>Tipo de armadura: </b>" + armadura +"</p>"
+        }
+
+        tarjetaDescripcion += "</div></div></div>"
+
+    return $(tarjeta).html(tarjetaImagenes+tarjetaDescripcion)
 }
