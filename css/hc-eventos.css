@@ -26,6 +26,14 @@ body {
     max-width: 100%;
 }
 
+.logo-evento {
+    width: 150px;
+}
+
+.tipo-evento {
+    height: 40px;
+}
+
 @media (min-width: 576px) {
 
     .artefacto img,
