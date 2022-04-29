@@ -63,3 +63,31 @@ $('#sin-info').click(function () {
         $('.btn-group .active').removeClass('active');
     }
 });
+
+$('#nuevo').click(function () {
+    $('#buscar').val('');
+    $('.btn-group .active').removeClass('active');
+    $('.card').removeClass('d-none');
+
+    if (!$(this).hasClass('active')) {
+        $('.btn-group .active').removeClass('active');
+        $(this).addClass('active');
+        $('#contenedor').find(".nivel:not(:contains('nuevo'))").parent().parent().parent().parent().parent().toggleClass('d-none');
+    } else {
+        $('.btn-group .active').removeClass('active');
+    }
+});
+
+$('#reacondicionado').click(function () {
+    $('#buscar').val('');
+    $('.btn-group .active').removeClass('active');
+    $('.card').removeClass('d-none');
+
+    if (!$(this).hasClass('active')) {
+        $('.btn-group .active').removeClass('active');
+        $(this).addClass('active');
+        $('#contenedor').find(".nivel:not(:contains('Reacondicionado'))").parent().parent().parent().parent().parent().toggleClass('d-none');
+    } else {
+        $('.btn-group .active').removeClass('active');
+    }
+});
