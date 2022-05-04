@@ -63,13 +63,13 @@ function generarConjunto(tipo, nombre, descripcion, nivel, arma, armadura, image
    
     var tarjetaImagenes = "<div class='row no-gutters'><div class='col-md-4 imagenes'>"
     
-    if (imagenes[0].src) tarjetaImagenes += "<img class='armadura' src='img/conjuntos-antiguos/" + imagenes[0].src + "' alt='" + imagenes[0].alt + "'><br />"
-    if (imagenes[1].src) tarjetaImagenes += "<img class='esencia' src='img/conjuntos-antiguos/esencias/" + imagenes[1].src + "' alt='" + imagenes[1].alt + "'><br />"
+    if (imagenes[0].src) tarjetaImagenes += "<img class='armadura' src='img/conjuntos-antiguos/" + imagenes[0].src + "' alt='" + imagenes[0].alt + "' data-toggle='tooltip' data-placement='top' title='" + imagenes[0].alt + "' /><br />"
+    if (imagenes[1].src) tarjetaImagenes += "<img class='esencia' src='img/conjuntos-antiguos/esencias/" + imagenes[1].src + "' alt='" + imagenes[1].alt + "' data-toggle='tooltip' data-placement='top' title='" + imagenes[1].alt + "' /><br />"
     
-    if (imagenes[2].src) tarjetaImagenes += "<img src='img/conjuntos-antiguos/materiales/legendario/" + imagenes[2].src + "' alt='" + imagenes[2].alt + "'>"
-    if (imagenes[3].src) tarjetaImagenes += "<img src='img/conjuntos-antiguos/materiales/epico/" + imagenes[3].src + "' alt='" + imagenes[3].alt + "'><br />"
-    if (imagenes[4].src) tarjetaImagenes += "<img class='esencia-azul' src='img/conjuntos-antiguos/materiales/raro/" + imagenes[4].src + "' alt='" + imagenes[4].alt + "'>"
-    if (imagenes[5].src) tarjetaImagenes += "<img class='esencia-azul' src='img/conjuntos-antiguos/materiales/raro/" + imagenes[5].src + "' alt='" + imagenes[5].alt + "'>"
+    if (imagenes[2].src) tarjetaImagenes += "<img src='img/conjuntos-antiguos/materiales/legendario/" + imagenes[2].src + "' alt='" + imagenes[2].alt + "' data-toggle='tooltip' data-placement='top' title='" + imagenes[2].alt + "' />"
+    if (imagenes[3].src) tarjetaImagenes += "<img src='img/conjuntos-antiguos/materiales/epico/" + imagenes[3].src + "' alt='" + imagenes[3].alt + "' data-toggle='tooltip' data-placement='top' title='" + imagenes[3].alt + "' /><br />"
+    if (imagenes[4].src) tarjetaImagenes += "<img class='esencia-azul' src='img/conjuntos-antiguos/materiales/raro/" + imagenes[4].src + "' alt='" + imagenes[4].alt + "' data-toggle='tooltip' data-placement='top' title='" + imagenes[4].alt + "' />"
+    if (imagenes[5].src) tarjetaImagenes += "<img class='esencia-azul' src='img/conjuntos-antiguos/materiales/raro/" + imagenes[5].src + "' alt='" + imagenes[5].alt + "' data-toggle='tooltip' data-placement='top' title='" + imagenes[5].alt + "' />"
     
     tarjetaImagenes += "</div>";
 

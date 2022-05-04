@@ -49,21 +49,6 @@ h1 {
     text-align: left;
 }
 
-.card>div {
-    position: relative;
-  }
-  
-  /*Tooltip magic*/
-  .card img:hover:after {
-    display: block;
-    content: attr(alt);
-    position: absolute;
-    bottom: 5px;
-    background-color: rgba(200, 200, 200, 0.8);
-    border-radius:2px;
-    padding:2px;
-  }
-
 .card-columns .card img {
     width: 80px;
     margin-bottom: 5px;
