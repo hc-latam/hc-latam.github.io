@@ -14,6 +14,7 @@
 
     <link rel="stylesheet" type="text/css" href="css/fab-menu.css">
     <link rel="stylesheet" type="text/css" href="css/hc-eventos.css">
+    <link rel="stylesheet" type="text/css" href="css/hc-modal.css">
 
 </head>
 
@@ -28,9 +29,6 @@
                 data-placement="left" title="Conjuntos Antiguos" id="menu-conjuntos"></a>
             <a href="mazmorra.html" role="button" class="btn btn-sub btn-danger has-tooltip" data-placement="left"
                 title="Jefes de Mazmorras" id="menu-mazmorras"></a>
-            <!--<button type="button" class="btn btn-sub btn-warning has-tooltip" data-placement="left" title="Download">
-                <i class="fa fa-download"></i>
-            </button>-->
         </div>
     </div>
 
@@ -42,10 +40,32 @@
 
     <div id="contenedor" class="container">
         <div class="row text-center">
-
         </div>
     </div>
 
+    <!-- Modal Artefacto-->
+    <div class="modal fade" id="artefactoModal" tabindex="-1" aria-labelledby="artefactoModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <img src="" alt="" class="img-fluid mb-3">
+                    <h5 class="modal-title" id="artefactoModalLabel"></h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="inner-modal-body">
+                        <p class="activa">Se activa: <span></span></p>
+                        <p class="subtitulo"></p>
+                        <p class="descripcion"></p>
+                        <p class="tiempo"><i class="fa fa-clock"></i> <span></span> segundos</p>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
 
     <footer>
         &#169; earcuivie - Hustle Castle 2022
@@ -62,10 +82,10 @@
         integrity="sha384-VHvPCCyXqtD5DqJeNxl2dtTyhF78xXNXdkwX1CZeRusQfRKp+tA7hAShOK/B/fQ2"
         crossorigin="anonymous"></script>
 
-
     <script src="js/fab-menu.js"></script>
 
     <script src="js/listar-eventos.js"></script>
+    <script src="js/detalle-artefacto.js"></script>
 </body>
 
 </html>
