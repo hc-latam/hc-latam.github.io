@@ -16,11 +16,7 @@ $('#artefactoModal').on('show.bs.modal', function (event) {
                 $('#artefactoModal .modal-header img').fadeIn();
 
             } else {
-
-
                 $('#artefactoModalLabel').text(artefacto.nombre);
-                $('#artefactoModal p.descripcion').text(artefacto.descripcion);
-                $('#artefactoModal p.activa span').text(artefacto.se_activa);
                 $('#artefactoModal p.subtitulo').text(artefacto.sub_titulo);
                 $('#artefactoModal .modal-header img').attr('src', 'img/eventos/artefactos/' + artefacto.imagen).attr('alt', 'img/eventos/artefactos/' + artefacto.nombre);
 
@@ -31,10 +27,17 @@ $('#artefactoModal').on('show.bs.modal', function (event) {
                         .replace(/(\$?\d+)/g, '<span>$1</span>').replace(/(\$?\%+)/g, '<span>$1</span>');
 
                 $('#artefactoModalLabel').fadeIn();
-                $('#artefactoModal p.descripcion').fadeIn();
-                $('#artefactoModal p.activa').fadeIn();
                 $('#artefactoModal p.subtitulo').fadeIn();
                 $('#artefactoModal .modal-header img').fadeIn();
+
+                if (artefacto.se_activa) {
+                    $('#artefactoModal p.activa span').text(artefacto.se_activa);
+                    $('#artefactoModal p.descripcion').text(artefacto.descripcion);
+                    $('#artefactoModal p.activa').fadeIn();
+                } else {
+                    $('#artefactoModal p.descripcion').text('Pronto...');
+                }
+                $('#artefactoModal p.descripcion').fadeIn();
 
                 if (artefacto.tiempo) {
                     $('#artefactoModal p.tiempo span').text(artefacto.tiempo);
