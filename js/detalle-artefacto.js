@@ -16,23 +16,22 @@ $('#artefactoModal').on('show.bs.modal', function (event) {
                 $('#artefactoModal .modal-header img').fadeIn();
 
             } else {
-                $('#artefactoModalLabel').text(artefacto.nombre);
                 $('#artefactoModal .modal-header img').attr('src', 'img/eventos/artefactos/' + artefacto.imagen).attr('alt', 'img/eventos/artefactos/' + artefacto.nombre);
+                $('#artefactoModalLabel').text(artefacto.nombre);
 
                 $('#artefactoModalLabel').fadeIn();
-                $('#artefactoModal .modal-header img').fadeIn();
 
                 if (artefacto.descripcion) {
                     $('#artefactoModal p.descripcion').text(artefacto.descripcion);
-                    let elementToFindDigitsIn = document.querySelector('p.descripcion');
-                    elementToFindDigitsIn.innerHTML =
-                        elementToFindDigitsIn
-                            .textContent
-                            .replace(/(\$?\d+)/g, '<span>$1</span>').replace(/(\$?\%+)/g, '<span>$1</span>');
                 } else {
                     $('#artefactoModal p.descripcion').text('Pronto...');
                 }
                 $('#artefactoModal p.descripcion').fadeIn();
+                let elementToFindDigitsIn = document.querySelector('p.descripcion');
+                elementToFindDigitsIn.innerHTML =
+                    elementToFindDigitsIn
+                        .textContent
+                        .replace(/(\$?\d+)/g, '<span>$1</span>').replace(/(\$?\%+)/g, '<span>$1</span>');
 
                 if (artefacto.se_activa) {
                     $('#artefactoModal p.activa span').text(artefacto.se_activa);
@@ -54,6 +53,8 @@ $('#artefactoModal').on('show.bs.modal', function (event) {
                 } else {
                     $('#artefactoModal p.tiempo').hide();
                 }
+
+                $('#artefactoModal .modal-header img').fadeIn();
             }
         },
         error: function (error) {
