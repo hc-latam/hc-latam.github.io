@@ -17,31 +17,42 @@ $('#artefactoModal').on('show.bs.modal', function (event) {
 
             } else {
                 $('#artefactoModalLabel').text(artefacto.nombre);
-                $('#artefactoModal p.subtitulo').text(artefacto.sub_titulo);
                 $('#artefactoModal .modal-header img').attr('src', 'img/eventos/artefactos/' + artefacto.imagen).attr('alt', 'img/eventos/artefactos/' + artefacto.nombre);
 
-                let elementToFindDigitsIn = document.querySelector('p.descripcion');
-                elementToFindDigitsIn.innerHTML =
-                    elementToFindDigitsIn
-                        .textContent
-                        .replace(/(\$?\d+)/g, '<span>$1</span>').replace(/(\$?\%+)/g, '<span>$1</span>');
-
                 $('#artefactoModalLabel').fadeIn();
-                $('#artefactoModal p.subtitulo').fadeIn();
                 $('#artefactoModal .modal-header img').fadeIn();
 
-                if (artefacto.se_activa) {
-                    $('#artefactoModal p.activa span').text(artefacto.se_activa);
+                if (artefacto.descripcion) {
                     $('#artefactoModal p.descripcion').text(artefacto.descripcion);
-                    $('#artefactoModal p.activa').fadeIn();
+                    let elementToFindDigitsIn = document.querySelector('p.descripcion');
+                    elementToFindDigitsIn.innerHTML =
+                        elementToFindDigitsIn
+                            .textContent
+                            .replace(/(\$?\d+)/g, '<span>$1</span>').replace(/(\$?\%+)/g, '<span>$1</span>');
                 } else {
                     $('#artefactoModal p.descripcion').text('Pronto...');
                 }
                 $('#artefactoModal p.descripcion').fadeIn();
 
+                if (artefacto.se_activa) {
+                    $('#artefactoModal p.activa span').text(artefacto.se_activa);
+                    $('#artefactoModal p.activa').fadeIn();
+                } else {
+                    $('#artefactoModal p.activa').hide();
+                }
+
+                if (artefacto.sub_titulo) {
+                    $('#artefactoModal p.subtitulo').text(artefacto.sub_titulo);
+                    $('#artefactoModal p.subtitulo').fadeIn();
+                } else {
+                    $('#artefactoModal p.subtitulo').hide();
+                }
+
                 if (artefacto.tiempo) {
                     $('#artefactoModal p.tiempo span').text(artefacto.tiempo);
                     $('#artefactoModal p.tiempo').fadeIn();
+                } else {
+                    $('#artefactoModal p.tiempo').hide();
                 }
             }
         },
