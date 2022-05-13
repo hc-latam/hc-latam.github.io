@@ -44,7 +44,7 @@ function crearTarjetaEvento(id, nombre, logo, fecha, artefacto, joyeria, armadur
 
     if (logo) contenido += "<img src='img/eventos/" + logo + "' alt='" + nombre + "' class='img-fluid rounded-circle mb-3 img-thumbnail shadow-sm bg-dark logo-evento'>";
     
-    contenido += "<h5 class='mb-0'>" + nombre + "</h5>"
+    if (nombre) contenido += "<h5 class='mb-0'>" + nombre + "</h5>"
 
     if (tipo) contenido += "<img src='img/eventos/tipos/"+tipo+".png' class='tipo-evento' alt='"+tipo+"' title='"+tipo+"'></img>";
 
