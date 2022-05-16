@@ -9,11 +9,11 @@ $('#amuletoModal').on('show.bs.modal', function (event) {
             if (amuleto == 0) {
                 $('#amuletoModalLabel').text('No disponible');
                 $('#amuletoModal p.descripcion').text('Pronto agregaremos la descripción del amuleto.');
-                $('#artefactoModal .modal-header img').attr('src', 'img/general/pronto.png').attr('alt', 'Pronto...');
+                $('#amuletoModal .modal-header img').attr('src', 'img/general/pronto.png').attr('alt', 'Pronto...');
 
                 $('#amuletoModalLabel').fadeIn();
                 $('#amuletoModal p.descripcion').fadeIn();
-                $('#artefactoModal .modal-header img').fadeIn();
+                $('#amuletoModal .modal-header img').fadeIn();
 
             } else {
                 $('#amuletoModal .modal-header img').attr('src', 'img/eventos/amuletos/' + amuleto.imagen).attr('alt', amuleto.nombre);
@@ -33,9 +33,10 @@ $('#amuletoModal').on('show.bs.modal', function (event) {
                         .textContent
                         .replace(/(\$?\d+)/g, '<span>$1</span>').replace(/(\$?\%+)/g, '<span>$1</span>');
 
-                if (amuleto.imagen) {
-                    $('#amuletoModal .modal-header img').fadeIn();
+                if (!amuleto.imagen) {
+                    $('#amuletoModal .modal-header img').attr('src', 'img/general/pronto.png').attr('alt', 'Pronto...');
                 }
+                $('#amuletoModal .modal-header img').fadeIn();
 
 
             }

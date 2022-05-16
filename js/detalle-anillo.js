@@ -9,11 +9,11 @@ $('#anilloModal').on('show.bs.modal', function (event) {
             if (anillo == 0) {
                 $('#anilloModalLabel').text('No disponible');
                 $('#anilloModal p.descripcion').text('Pronto agregaremos la descripción del anillo.');
-                $('#artefactoModal .modal-header img').attr('src', 'img/general/pronto.png').attr('alt', 'Pronto...');
+                $('#anilloModal .modal-header img').attr('src', 'img/general/pronto.png').attr('alt', 'Pronto...');
 
                 $('#anilloModalLabel').fadeIn();
                 $('#anilloModal p.descripcion').fadeIn();
-                $('#artefactoModal .modal-header img').fadeIn();
+                $('#anilloModal .modal-header img').fadeIn();
 
             } else {
                 $('#anilloModal .modal-header img').attr('src', 'img/eventos/anillos/' + anillo.imagen).attr('alt', anillo.nombre);
@@ -33,9 +33,10 @@ $('#anilloModal').on('show.bs.modal', function (event) {
                         .textContent
                         .replace(/(\$?\d+)/g, '<span>$1</span>').replace(/(\$?\%+)/g, '<span>$1</span>');
 
-                if (anillo.imagen) {
-                    $('#anilloModal .modal-header img').fadeIn();
+                if (!anillo.imagen) {
+                    $('#anilloModal .modal-header img').attr('src', 'img/general/pronto.png').attr('alt', 'Pronto...');
                 }
+                $('#anilloModal .modal-header img').fadeIn();
 
 
             }
