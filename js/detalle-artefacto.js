@@ -16,7 +16,7 @@ $('#artefactoModal').on('show.bs.modal', function (event) {
                 $('#artefactoModal .modal-header img').fadeIn();
 
             } else {
-                $('#artefactoModal .modal-header img').attr('src', 'img/eventos/artefactos/' + artefacto.imagen).attr('alt', 'img/eventos/artefactos/' + artefacto.nombre);
+                $('#artefactoModal .modal-header img').attr('src', 'img/eventos/artefactos/' + artefacto.imagen).attr('alt', artefacto.nombre);
                 $('#artefactoModalLabel').text(artefacto.nombre);
 
                 $('#artefactoModalLabel').fadeIn();
@@ -27,7 +27,7 @@ $('#artefactoModal').on('show.bs.modal', function (event) {
                     $('#artefactoModal p.descripcion').text('Pronto...');
                 }
                 $('#artefactoModal p.descripcion').fadeIn();
-                let elementToFindDigitsIn = document.querySelector('p.descripcion');
+                let elementToFindDigitsIn = document.querySelector('#artefactoModal p.descripcion');
                 elementToFindDigitsIn.innerHTML =
                     elementToFindDigitsIn
                         .textContent

@@ -10,32 +10,33 @@
     <meta name="description" content="Artículos que se obtienen en eventos de Hustle Castle, listados por fecha" />
     <meta property="og:title" content="Eventos Hustle Castle" />
     <meta property="og:url" content="https://hc-latam.github.io/" />
-    <meta property="og:description" content="Artículos que se obtienen en eventos de Hustle Castle, listados por fecha" />
+    <meta property="og:description"
+        content="Artículos que se obtienen en eventos de Hustle Castle, listados por fecha" />
     <meta property="og:image" content="https://hc-latam.github.io/img/general/eventos_pre.png" />
     <meta property="og:type" content="article" />
     <meta property="og:locale" content="es_CL" />
 
     <link rel="shortcut icon" href="/img/fav/favicon.ico">
-	<link rel="icon" sizes="16x16 32x32 64x64" href="/img/fav/favicon.ico">
-	<link rel="icon" type="image/png" sizes="196x196" href="/img/fav/favicon-192.png">
-	<link rel="icon" type="image/png" sizes="160x160" href="/img/fav/favicon-160.png">
-	<link rel="icon" type="image/png" sizes="96x96" href="/img/fav/favicon-96.png">
-	<link rel="icon" type="image/png" sizes="64x64" href="/img/fav/favicon-64.png">
-	<link rel="icon" type="image/png" sizes="32x32" href="/img/fav/favicon-32.png">
-	<link rel="icon" type="image/png" sizes="16x16" href="/img/fav/favicon-16.png">
-	<link rel="apple-touch-icon" href="/img/fav/favicon-57.png">
-	<link rel="apple-touch-icon" sizes="114x114" href="/img/fav/favicon-114.png">
-	<link rel="apple-touch-icon" sizes="72x72" href="/img/fav/favicon-72.png">
-	<link rel="apple-touch-icon" sizes="144x144" href="/img/fav/favicon-144.png">
-	<link rel="apple-touch-icon" sizes="60x60" href="/img/fav/favicon-60.png">
-	<link rel="apple-touch-icon" sizes="120x120" href="/img/fav/favicon-120.png">
-	<link rel="apple-touch-icon" sizes="76x76" href="/img/fav/favicon-76.png">
-	<link rel="apple-touch-icon" sizes="152x152" href="/img/fav/favicon-152.png">
-	<link rel="apple-touch-icon" sizes="180x180" href="/img/fav/favicon-180.png">
-	<meta name="msapplication-TileColor" content="#FFFFFF">
-	<meta name="msapplication-TileImage" content="/img/fav/favicon-144.png">
-	<meta name="msapplication-config" content="/img/fav/browserconfig.xml">
-    
+    <link rel="icon" sizes="16x16 32x32 64x64" href="/img/fav/favicon.ico">
+    <link rel="icon" type="image/png" sizes="196x196" href="/img/fav/favicon-192.png">
+    <link rel="icon" type="image/png" sizes="160x160" href="/img/fav/favicon-160.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="/img/fav/favicon-96.png">
+    <link rel="icon" type="image/png" sizes="64x64" href="/img/fav/favicon-64.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/img/fav/favicon-32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/img/fav/favicon-16.png">
+    <link rel="apple-touch-icon" href="/img/fav/favicon-57.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/img/fav/favicon-114.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/img/fav/favicon-72.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="/img/fav/favicon-144.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="/img/fav/favicon-60.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="/img/fav/favicon-120.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="/img/fav/favicon-76.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="/img/fav/favicon-152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/img/fav/favicon-180.png">
+    <meta name="msapplication-TileColor" content="#FFFFFF">
+    <meta name="msapplication-TileImage" content="/img/fav/favicon-144.png">
+    <meta name="msapplication-config" content="/img/fav/browserconfig.xml">
+
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
         integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
     <script src="https://kit.fontawesome.com/9987974c2b.js" crossorigin="anonymous"></script>
@@ -96,6 +97,27 @@
         </div>
     </div>
 
+    <!-- Modal Anillo-->
+    <div class="modal fade" id="anilloModal" tabindex="-1" aria-labelledby="anilloModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <img src="" alt="" class="img-fluid mb-3">
+                    <h5 class="modal-title" id="anilloModalLabel"></h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="inner-modal-body">
+                        <p class="descripcion"></p>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
     <footer>
         &#169; earcuivie - Hustle Castle 2022
     </footer>
@@ -115,6 +137,7 @@
 
     <script src="js/listar-eventos.js"></script>
     <script src="js/detalle-artefacto.js"></script>
+    <script src="js/detalle-anillo.js"></script>
 </body>
 
 </html>

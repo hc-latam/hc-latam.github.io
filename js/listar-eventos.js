@@ -52,7 +52,7 @@ function crearTarjetaEvento(id, nombre, logo, fecha, artefacto, joyeria, armadur
     "<ul class='list-group list-group-flush bg-dark mb-0 mt-3'>";
 
     if (artefacto) contenido += "<li class='list-group-item bg-dark p-0 border-0 artefacto'><a href='#' data-toggle='modal' data-target='#artefactoModal' data-evento='"+id+"'><img src='img/eventos/artefactos/" + artefacto + "' alt='" + artefacto + "' class='img-fluid mb-3'></a></li>";
-    if (joyeria) contenido += "<li class='list-group-item bg-dark p-0 border-0 joyeria'><img src='img/eventos/joyas/" + joyeria + "' alt='" + joyeria + "' class='img-fluid mb-3'></li>";
+    if (joyeria) contenido += "<li class='list-group-item bg-dark p-0 border-0 joyeria'><a href='#' data-toggle='modal' data-target='#anilloModal' data-evento='"+id+"'><img src='img/eventos/joyas/" + joyeria + "' alt='" + joyeria + "' class='img-fluid mb-3'></a></li>";
     if (armaduras) contenido += "<li class='list-group-item bg-dark p-0 border-0 armaduras'><img src='img/eventos/armaduras/" + armaduras + "' alt='" + armaduras + "' class='img-fluid mb-3'></li>";
     if (armas) contenido += "<li class='list-group-item bg-dark p-0 border-0 armas'><img src='img/eventos/armas/" + armas + "' alt='" + armas + "' class='img-fluid mb-3'></li>";
     if (extras) contenido += "<li class='list-group-item bg-dark p-0 border-0 extras'><img src='img/eventos/extras/" + extras + "' alt='" + extras + "' class='img-fluid mb-3'></li>";
