@@ -9,11 +9,9 @@ $('#anilloModal').on('show.bs.modal', function (event) {
             if (anillo == 0) {
                 $('#anilloModalLabel').text('No disponible');
                 $('#anilloModal p.descripcion').text('Pronto agregaremos la descripción.');
-                $('#anilloModal .modal-header img').attr('src', 'img/general/pronto.png').attr('alt', 'Pronto...');
 
                 $('#anilloModalLabel').fadeIn();
                 $('#anilloModal p.descripcion').fadeIn();
-                $('#anilloModal .modal-header img').fadeIn();
 
             } else {
                 $('#anilloModal .modal-header img').attr('src', 'img/eventos/anillos/' + anillo.imagen).attr('alt', anillo.nombre);
