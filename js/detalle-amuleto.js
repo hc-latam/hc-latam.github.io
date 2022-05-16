@@ -1,4 +1,4 @@
-$('#anilloModal').on('show.bs.modal', function (event) {
+$('#amuletoModal').on('show.bs.modal', function (event) {
     var button = $(event.relatedTarget) // Button that triggered the modal
     var idEvento = button.data('evento')
     $.get({
@@ -6,12 +6,14 @@ $('#anilloModal').on('show.bs.modal', function (event) {
         success: function (amuleto) {
             console.log(amuleto);
 
-            if (anillo == 0) {
+            if (amuleto == 0) {
                 $('#amuletoModalLabel').text('No disponible');
-                $('#amuletoModal p.descripcion').text('Pronto agregaremos la descripción.');
+                $('#amuletoModal p.descripcion').text('Pronto agregaremos la descripción del amuleto.');
+                $('#artefactoModal .modal-header img').attr('src', 'img/general/pronto.png').attr('alt', 'Pronto...');
 
                 $('#amuletoModalLabel').fadeIn();
                 $('#amuletoModal p.descripcion').fadeIn();
+                $('#artefactoModal .modal-header img').fadeIn();
 
             } else {
                 $('#amuletoModal .modal-header img').attr('src', 'img/eventos/amuletos/' + amuleto.imagen).attr('alt', amuleto.nombre);
@@ -46,7 +48,7 @@ $('#anilloModal').on('show.bs.modal', function (event) {
 
 });
 
-$('#anilloModal').on('hidden.bs.modal', function (event) {
+$('#amuletoModal').on('hidden.bs.modal', function (event) {
     $('#amuletoModalLabel').hide();
     $('#amuletoModal p.descripcion').hide();
     $('#amuletoModal .modal-header img').hide();

@@ -8,7 +8,7 @@ $('#artefactoModal').on('show.bs.modal', function (event) {
 
             if (artefacto == 0) {
                 $('#artefactoModalLabel').text('No disponible');
-                $('#artefactoModal p.descripcion').text('Pronto agregaremos la descripción.');
+                $('#artefactoModal p.descripcion').text('Pronto agregaremos la descripción del artefacto.');
                 $('#artefactoModal .modal-header img').attr('src', 'img/general/pronto.png').attr('alt', 'Pronto...');
 
                 $('#artefactoModalLabel').fadeIn();
