@@ -21,9 +21,9 @@ $('#amuletoModal').on('show.bs.modal', function (event) {
                 } else {
                     $('#amuletoModal .modal-header img').attr('src', 'img/general/pronto.png').attr('alt', 'Pronto...');
                 }
+                
                 $('#amuletoModalLabel').text(amuleto.nombre);
-
-                $('#anillamuletoModalLabelModalLabel').fadeIn();
+                $('#amuletoModalLabel').fadeIn();
 
                 if (amuleto.descripcion) {
                     $('#amuletoModal p.descripcion').text(amuleto.descripcion);

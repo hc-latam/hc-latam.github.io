@@ -16,9 +16,13 @@ $('#artefactoModal').on('show.bs.modal', function (event) {
                 $('#artefactoModal .modal-header img').fadeIn();
 
             } else {
-                $('#artefactoModal .modal-header img').attr('src', 'img/eventos/artefactos/' + artefacto.imagen).attr('alt', artefacto.nombre);
-                $('#artefactoModalLabel').text(artefacto.nombre);
+                if (artefacto.imagen) {
+                    $('#artefactoModal .modal-header img').attr('src', 'img/eventos/artefactos/' + artefacto.imagen).attr('alt', artefacto.nombre);
+                } else {
+                    $('#artefactoModal .modal-header img').attr('src', 'img/general/pronto.png').attr('alt', 'Pronto...');
+                }
 
+                $('#artefactoModalLabel').text(artefacto.nombre);
                 $('#artefactoModalLabel').fadeIn();
 
                 if (artefacto.descripcion) {

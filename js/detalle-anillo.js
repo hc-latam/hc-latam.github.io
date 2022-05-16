@@ -21,8 +21,8 @@ $('#anilloModal').on('show.bs.modal', function (event) {
                 } else {
                     $('#anilloModal .modal-header img').attr('src', 'img/general/pronto.png').attr('alt', 'Pronto...');
                 }
+                
                 $('#anilloModalLabel').text(anillo.nombre);
-
                 $('#anilloModalLabel').fadeIn();
 
                 if (anillo.descripcion) {
