@@ -16,7 +16,11 @@ $('#anilloModal').on('show.bs.modal', function (event) {
                 $('#anilloModal .modal-header img').fadeIn();
 
             } else {
-                $('#anilloModal .modal-header img').attr('src', 'img/eventos/anillos/' + anillo.imagen).attr('alt', anillo.nombre);
+                if (anillo.imagen) {
+                    $('#anilloModal .modal-header img').attr('src', 'img/eventos/anillos/' + anillo.imagen).attr('alt', anillo.nombre);
+                } else {
+                    $('#anilloModal .modal-header img').attr('src', 'img/general/pronto.png').attr('alt', 'Pronto...');
+                }
                 $('#anilloModalLabel').text(anillo.nombre);
 
                 $('#anilloModalLabel').fadeIn();
@@ -33,12 +37,7 @@ $('#anilloModal').on('show.bs.modal', function (event) {
                         .textContent
                         .replace(/(\$?\d+)/g, '<span>$1</span>').replace(/(\$?\%+)/g, '<span>$1</span>');
 
-                if (!anillo.imagen) {
-                    $('#anilloModal .modal-header img').attr('src', 'img/general/pronto.png').attr('alt', 'Pronto...');
-                }
                 $('#anilloModal .modal-header img').fadeIn();
-
-
             }
         },
         error: function (error) {

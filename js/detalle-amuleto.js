@@ -16,7 +16,11 @@ $('#amuletoModal').on('show.bs.modal', function (event) {
                 $('#amuletoModal .modal-header img').fadeIn();
 
             } else {
-                $('#amuletoModal .modal-header img').attr('src', 'img/eventos/amuletos/' + amuleto.imagen).attr('alt', amuleto.nombre);
+                if (amuleto.imagen) {
+                    $('#amuletoModal .modal-header img').attr('src', 'img/eventos/amuletos/' + amuleto.imagen).attr('alt', amuleto.nombre);
+                } else {
+                    $('#amuletoModal .modal-header img').attr('src', 'img/general/pronto.png').attr('alt', 'Pronto...');
+                }
                 $('#amuletoModalLabel').text(amuleto.nombre);
 
                 $('#anillamuletoModalLabelModalLabel').fadeIn();
@@ -33,9 +37,6 @@ $('#amuletoModal').on('show.bs.modal', function (event) {
                         .textContent
                         .replace(/(\$?\d+)/g, '<span>$1</span>').replace(/(\$?\%+)/g, '<span>$1</span>');
 
-                if (!amuleto.imagen) {
-                    $('#amuletoModal .modal-header img').attr('src', 'img/general/pronto.png').attr('alt', 'Pronto...');
-                }
                 $('#amuletoModal .modal-header img').fadeIn();
 
 
