@@ -31,7 +31,11 @@ $('#anilloModal').on('show.bs.modal', function (event) {
                         .textContent
                         .replace(/(\$?\d+)/g, '<span>$1</span>').replace(/(\$?\%+)/g, '<span>$1</span>');
 
-                $('#anilloModal .modal-header img').fadeIn();
+                if (anillo.imagen) {
+                    $('#anilloModal .modal-header img').fadeIn();
+                }
+
+
             }
         },
         error: function (error) {
