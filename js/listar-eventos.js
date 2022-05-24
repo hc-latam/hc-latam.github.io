@@ -21,7 +21,6 @@ function obtenerListadoEventos(){
                     evento.artefacto,
                     evento.anillo,
                     evento.amuleto,
-                    evento.joyas,
                     evento.armaduras,
                     evento.armas,
                     evento.extras,
@@ -38,7 +37,7 @@ function obtenerListadoEventos(){
     
 }
 
-function crearTarjetaEvento(id, nombre, logo, fecha, artefacto, anillo, amuleto, joyeria, armaduras, armas, extras, outfit, tipo) {
+function crearTarjetaEvento(id, nombre, logo, fecha, artefacto, anillo, amuleto, armaduras, armas, extras, outfit, tipo) {
 
     if (fecha==null) fecha='';
 
