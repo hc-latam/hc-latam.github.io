@@ -46,11 +46,11 @@ $('#runasModal').on('show.bs.modal', function (event) {
 
                 if (runa.conflicto_tipo) {
                     $('#runasModal #conflicto.modal-content .tipo').html('<img src="img/tipos-personajes/' + runa.conflicto_tipo + '.png" alt="Tipo ' + runa.conflicto_tipo + '" />Tipo: ' + runa.conflicto_tipo);
-                    $('#runasModal #conflicto.modal-content .tipo').show();
                     $('#runasModal #masacre.modal-content .tipo').html('<img src="img/tipos-personajes/' + runa.masacre_tipo + '.png" alt="Tipo ' + runa.masacre_tipo + '" />Tipo: ' + runa.masacre_tipo);
-                    $('#runasModal #masacre.modal-content .tipo').show();
                     $('#runasModal #diversion.modal-content .tipo').html('<img src="img/tipos-personajes/' + runa.diversion_tipo + '.png" alt="Tipo ' + runa.diversion_tipo + '" />Tipo: ' + runa.diversion_tipo);
                     $('#runasModal #diversion.modal-content .tipo').show();
+                } else {
+                    $('#runasModal .modal-content .tipo').hide();
                 }
 
                 $('#runasModal .modal-header img').show();
