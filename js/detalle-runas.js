@@ -12,7 +12,7 @@ $('#runasModal').on('show.bs.modal', function (event) {
                 $('#runasModal .modal-content .tipo').hide();
                 $('#runasModal #masacre').hide();
                 $('#runasModal #diversion').hide();
-                
+
                 $('#runasModal #conflicto .modal-title').text('No disponible');
                 $('#runasModal #conflicto p.descripcion').text('Pronto agregaremos la descripción de las runas.');
                 $('#runasModal #conflicto .modal-header img').attr('src', 'img/general/pronto.png').attr('alt', 'Pronto...');
@@ -55,14 +55,20 @@ $('#runasModal').on('show.bs.modal', function (event) {
 
                 if (runa.difieren) {
                     var mejorar = $('#runasModal .modal-body .mejorar').text();
-                    $('#runasModal #conflicto .modal-body .mejorar').text(mejorar + 'de ' + runa.conflicto_tipo +'s');
-                    $('#runasModal #masacre .modal-body .mejorar').text(mejorar + 'de ' + runa.masacre_tipo +'s');
-                    $('#runasModal #diversion .modal-body .mejorar').text(mejorar + 'de ' + runa.diversion_tipo +'s');
-                    
+                    $('#runasModal #conflicto .modal-body .mejorar').text(mejorar + 'de ' + runa.conflicto_tipo + 's');
+                    $('#runasModal #masacre .modal-body .mejorar').text(mejorar + 'de ' + runa.masacre_tipo + 's');
+                    $('#runasModal #diversion .modal-body .mejorar').text(mejorar + 'de ' + runa.diversion_tipo + 's');
+
                     var descripcion = $('#runasModal .modal-body .descripcion').text();
                     $('#runasModal #conflicto .modal-body .descripcion').text(descripcion.replace("REMPLAZAR", runa.conflicto_tipo.toUpperCase()));
                     $('#runasModal #masacre .modal-body .descripcion').text(descripcion.replace("REMPLAZAR", runa.masacre_tipo.toUpperCase()));
                     $('#runasModal #diversion .modal-body .descripcion').text(descripcion.replace("REMPLAZAR", runa.diversion_tipo.toUpperCase()));
+
+                    let elementoTanqueMejorar = document.querySelector('#runasModal .modal-body .mejorar');
+                    elementoTanqueMejorar.innerHTML = elementoTanqueMejorar.textContent.replace('Tanques', 'Guerreros');
+
+                    let elementoTanqueDescripcion = document.querySelector('#runasModal .modal-body .descripcion');
+                    elementoTanqueDescripcion.innerHTML = elementoTanqueDescripcion.textContent.replace('TANQUE', 'GUERRERO');
                 }
 
                 $('#runasModal .modal-header img').show();
@@ -70,7 +76,7 @@ $('#runasModal').on('show.bs.modal', function (event) {
                 $('#runasModal #conflicto').fadeIn();
                 $('#runasModal #masacre').fadeIn();
                 $('#runasModal #diversion').fadeIn();
-                
+
 
             }
         },
@@ -85,7 +91,7 @@ $('#runasModal').on('show.bs.modal', function (event) {
 $('#runasModal').on('hidden.bs.modal', function (event) {
     $('#runasModal .modal-title').text('');
     $('#runasModal p.descripcion').text('');
-    $('#runasModal .modal-header img').attr('src','');
+    $('#runasModal .modal-header img').attr('src', '');
 
     $('#runasModal #conflicto').fadeOut();
     $('#runasModal #masacre').fadeOut();
