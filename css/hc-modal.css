@@ -70,7 +70,8 @@
     color: #e4f15a;
     font-weight: bold;
 }
-.inner-modal-body p.activa {
+.inner-modal-body p.activa,
+.inner-modal-body p.mejorar {
     color: #00BBC9;
     font-weight: bold;
     position: absolute;
@@ -97,6 +98,7 @@
 }
 
 .modal-content p.tipo img {
-    width: 18px;
-    height: 18px;
+    width: 20px;
+    height: 20px;
+    margin-right: 3px;
 }
