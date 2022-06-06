@@ -36,11 +36,11 @@ $('#runasModal').on('show.bs.modal', function (event) {
                 $('#runasModal #diversion .modal-title').text('Runa ' + runa.diversion_nombre);
                 $('#runasModal #diversion .modal-title').fadeIn();
 
-                $('#runasModal .modal-body .mejorar').text('Se usa para mejorar ' + runa.mejorar);
+                $('#runasModal .modal-body .mejorar').text('Se usa para mejorar ' + mejorar);
                 $('#runasModal .modal-body .mejorar').show();
 
                 $('#runasModal .modal-body .descripcion').html('Usa la runa con un ' + runa.descripcion_usa_con +
-                    'para <span>' + runa.descripcion_destacada + '</span> ' + runa.descripcion_restante + '<br /> ' +
+                    ' para <span>' + runa.descripcion_destacada + '</span> ' + runa.descripcion_restante + '<br /> ' +
                     'Puedes retirar la runa en cualquier momento y usarla en otra ' + runa.descripcion_usa_con + '.');
                 $('#runasModal .modal-body .descripcion').show();
 
@@ -48,9 +48,21 @@ $('#runasModal').on('show.bs.modal', function (event) {
                     $('#runasModal #conflicto.modal-content .tipo').html('<img src="img/tipos-personajes/' + runa.conflicto_tipo + '.png" alt="Tipo ' + runa.conflicto_tipo + '" />Tipo: ' + runa.conflicto_tipo);
                     $('#runasModal #masacre.modal-content .tipo').html('<img src="img/tipos-personajes/' + runa.masacre_tipo + '.png" alt="Tipo ' + runa.masacre_tipo + '" />Tipo: ' + runa.masacre_tipo);
                     $('#runasModal #diversion.modal-content .tipo').html('<img src="img/tipos-personajes/' + runa.diversion_tipo + '.png" alt="Tipo ' + runa.diversion_tipo + '" />Tipo: ' + runa.diversion_tipo);
-                    $('#runasModal #diversion.modal-content .tipo').show();
+                    $('#runasModal .modal-content .tipo').show();
                 } else {
                     $('#runasModal .modal-content .tipo').hide();
+                }
+
+                if (runa.difieren) {
+                    var mejorar = $('#runasModal .modal-body .mejorar').text();
+                    $('#runasModal #conflicto .modal-body .mejorar').text(mejorar + 'de ' + runa.conflicto_tipo +'s');
+                    $('#runasModal #masacre .modal-body .mejorar').text(mejorar + 'de ' + runa.masacre_tipo +'s');
+                    $('#runasModal #diversion .modal-body .mejorar').text(mejorar + 'de ' + runa.diversion_tipo +'s');
+                    
+                    var descripcion = $('#runasModal .modal-body .descripcion').text();
+                    $('#runasModal #conflicto .modal-body .descripcion').text(descripcion.replace("REMPLAZAR", runa.conflicto_tipo.toUpperCase()));
+                    $('#runasModal #masacre .modal-body .descripcion').text(descripcion.replace("REMPLAZAR", runa.masacre_tipo.toUpperCase()));
+                    $('#runasModal #diversion .modal-body .descripcion').text(descripcion.replace("REMPLAZAR", runa.diversion_tipo.toUpperCase()));
                 }
 
                 $('#runasModal .modal-header img').show();
