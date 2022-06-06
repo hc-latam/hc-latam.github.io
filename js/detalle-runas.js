@@ -53,7 +53,7 @@ $('#runasModal').on('show.bs.modal', function (event) {
                     $('#runasModal .modal-content .tipo').hide();
                 }
 
-                if (runa.difieren) {
+                if (runa.difieren === 1) {
                     var mejorar = $('#runasModal #conflicto .modal-body .mejorar').text();
                     $('#runasModal #conflicto .modal-body .mejorar').text(mejorar + 'de ' + runa.conflicto_tipo + 's');
                     $('#runasModal #masacre .modal-body .mejorar').text(mejorar + 'de ' + runa.masacre_tipo + 's');
