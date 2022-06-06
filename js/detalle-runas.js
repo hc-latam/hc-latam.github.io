@@ -37,12 +37,9 @@ $('#runasModal').on('show.bs.modal', function (event) {
                 $('#runasModal #diversion .modal-title').fadeIn();
 
                 if (runa.difieren === "1") {
-                    $('#runasModal #conflicto .modal-body .mejorar').text('Se usa para mejorar ' + runa.mejorar + 'de ' + runa.conflicto_tipo.toLowerCase() + 's');
-                    $('#runasModal #masacre .modal-body .mejorar').text('Se usa para mejorar ' + runa.mejorar + 'de ' + runa.masacre_tipo.toLowerCase() + 's');
-                    $('#runasModal #conflicto .modal-body .mejorar').text('Se usa para mejorar ' + runa.mejorar + 'de ' + runa.conflicto_tipo.toLowerCase() + 's');
-
-                    let elementoTanqueMejorar = document.querySelector('#runasModal .modal-body .mejorar');
-                    elementoTanqueMejorar.innerHTML = elementoTanqueMejorar.textContent.replace('tanques', 'guerreros');
+                    $('#runasModal #conflicto .modal-body .mejorar').text('Se usa para mejorar ' + runa.mejorar + ' de ' + runa.conflicto_tipo.toLowerCase() + 's');
+                    $('#runasModal #masacre .modal-body .mejorar').text('Se usa para mejorar ' + runa.mejorar + ' de ' + runa.masacre_tipo.toLowerCase() + 's');
+                    $('#runasModal #diversion .modal-body .mejorar').text('Se usa para mejorar ' + runa.mejorar + ' de ' + runa.conflicto_tipo.toLowerCase() + 's');
 
                     $('#runasModal #conflicto .modal-body .descripcion').html('Usa la runa con un ' + runa.descripcion_usa_con +
                         ' para <span>' + runa.descripcion_destacada.replace("REMPLAZAR", runa.conflicto_tipo.toUpperCase()) + '</span> ' + runa.descripcion_restante + '<br /> ' +
@@ -53,9 +50,6 @@ $('#runasModal').on('show.bs.modal', function (event) {
                     $('#runasModal #diversion .modal-body .descripcion').html('Usa la runa con un ' + runa.descripcion_usa_con +
                         ' para <span>' + runa.descripcion_destacada.replace("REMPLAZAR", runa.diversion_tipo.toUpperCase()) + '</span> ' + runa.descripcion_restante + '<br /> ' +
                         'Puedes retirar la runa en cualquier momento y usarla en otra ' + runa.descripcion_usa_con + '.');
-
-                    let elementoTanqueDescripcion = document.querySelector('#runasModal .modal-body .descripcion');
-                    elementoTanqueDescripcion.innerHTML = elementoTanqueDescripcion.textContent.replace('TANQUE', 'GUERRERO');
                 } else {
                     $('#runasModal .modal-body .mejorar').text('Se usa para mejorar ' + runa.mejorar);
 
