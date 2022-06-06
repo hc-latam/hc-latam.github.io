@@ -36,7 +36,7 @@ $('#runasModal').on('show.bs.modal', function (event) {
                 $('#runasModal #diversion .modal-title').text('Runa ' + runa.diversion_nombre);
                 $('#runasModal #diversion .modal-title').fadeIn();
 
-                $('#runasModal .modal-body .mejorar').text('Se usa para mejorar ' + mejorar);
+                $('#runasModal .modal-body .mejorar').text('Se usa para mejorar ' + runa.mejorar);
                 $('#runasModal .modal-body .mejorar').show();
 
                 $('#runasModal .modal-body .descripcion').html('Usa la runa con un ' + runa.descripcion_usa_con +
@@ -53,7 +53,7 @@ $('#runasModal').on('show.bs.modal', function (event) {
                     $('#runasModal .modal-content .tipo').hide();
                 }
 
-                if (runa.difieren === 1) {
+                if (runa.difieren === "1") {
                     var mejorar = $('#runasModal #conflicto .modal-body .mejorar').text();
                     $('#runasModal #conflicto .modal-body .mejorar').text(mejorar + 'de ' + runa.conflicto_tipo + 's');
                     $('#runasModal #masacre .modal-body .mejorar').text(mejorar + 'de ' + runa.masacre_tipo + 's');
