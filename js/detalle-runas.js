@@ -54,12 +54,12 @@ $('#runasModal').on('show.bs.modal', function (event) {
                 }
 
                 if (runa.difieren) {
-                    var mejorar = $('#runasModal .modal-body .mejorar').text();
+                    var mejorar = $('#runasModal #conflicto .modal-body .mejorar').text();
                     $('#runasModal #conflicto .modal-body .mejorar').text(mejorar + 'de ' + runa.conflicto_tipo + 's');
                     $('#runasModal #masacre .modal-body .mejorar').text(mejorar + 'de ' + runa.masacre_tipo + 's');
                     $('#runasModal #diversion .modal-body .mejorar').text(mejorar + 'de ' + runa.diversion_tipo + 's');
 
-                    var descripcion = $('#runasModal .modal-body .descripcion').text();
+                    var descripcion = $('#runasModal #conflicto .modal-body .descripcion').text();
                     $('#runasModal #conflicto .modal-body .descripcion').text(descripcion.replace("REMPLAZAR", runa.conflicto_tipo.toUpperCase()));
                     $('#runasModal #masacre .modal-body .descripcion').text(descripcion.replace("REMPLAZAR", runa.masacre_tipo.toUpperCase()));
                     $('#runasModal #diversion .modal-body .descripcion').text(descripcion.replace("REMPLAZAR", runa.diversion_tipo.toUpperCase()));
