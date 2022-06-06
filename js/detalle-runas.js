@@ -40,7 +40,7 @@ $('#runasModal').on('show.bs.modal', function (event) {
                 $('#runasModal .modal-body .mejorar').show();
 
                 $('#runasModal .modal-body .descripcion').html('Usa la runa con un ' + runa.descripcion_usa_con +
-                    'para <span>' + runa.descripcion_destacada + '</span> una de sus habilidades.<br /> ' +
+                    'para <span>' + runa.descripcion_destacada + '</span> ' + runa.descripcion_restante + '<br /> ' +
                     'Puedes retirar la runa en cualquier momento y usarla en otra ' + runa.descripcion_usa_con + '.');
                 $('#runasModal .modal-body .descripcion').show();
 
