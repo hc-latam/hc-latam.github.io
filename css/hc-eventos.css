@@ -40,6 +40,7 @@ body {
     .joyeria img,
     .armas img,
     .armaduras img,
+    .runas img,
     .extras img {
         max-height: 85px;
     }

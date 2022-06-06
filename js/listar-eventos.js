@@ -24,6 +24,7 @@ function obtenerListadoEventos(){
                     evento.armaduras,
                     evento.armas,
                     evento.extras,
+                    evento.runas,
                     evento.outfit,
                     evento.tipo
                 ))
@@ -37,7 +38,7 @@ function obtenerListadoEventos(){
     
 }
 
-function crearTarjetaEvento(id, nombre, logo, fecha, artefacto, anillo, amuleto, armaduras, armas, extras, outfit, tipo) {
+function crearTarjetaEvento(id, nombre, logo, fecha, artefacto, anillo, amuleto, armaduras, armas, runas, extras, outfit, tipo) {
 
     if (fecha==null) fecha='';
 
@@ -63,6 +64,7 @@ function crearTarjetaEvento(id, nombre, logo, fecha, artefacto, anillo, amuleto,
 
     if (armaduras) contenido += "<li class='list-group-item bg-dark p-0 border-0 armaduras'><img src='img/eventos/armaduras/" + armaduras + "' alt='" + armaduras + "' class='img-fluid mb-3'></li>";
     if (armas) contenido += "<li class='list-group-item bg-dark p-0 border-0 armas'><img src='img/eventos/armas/" + armas + "' alt='" + armas + "' class='img-fluid mb-3'></li>";
+    if (runas) contenido += "<li class='list-group-item bg-dark p-0 border-0 runas'><img src='img/eventos/runas/" + runas + "' alt='" + runas + "' class='img-fluid mb-3'></li>";
     if (extras) contenido += "<li class='list-group-item bg-dark p-0 border-0 extras'><img src='img/eventos/extras/" + extras + "' alt='" + extras + "' class='img-fluid mb-3'></li>";
 
     //if (outfit) contenido += "<li class='list-group-item bg-dark p-0 border-0 outfit'><img src='img/eventos/outfit/" + outfit + "' alt='" + outfit + "' class='img-fluid mb-3'></li>";
