@@ -90,3 +90,13 @@
 .inner-modal-body p.tiempo {
     color: #FFF;
 }
+
+.modal-content p.tipo {
+    margin: 10px;
+    text-align: left;
+}
+
+.modal-content p.tipo img {
+    width: 18px;
+    height: 18px;
+}
