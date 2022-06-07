@@ -60,6 +60,20 @@ $('#runasModal').on('show.bs.modal', function (event) {
                         ' para <span>' + runa.descripcion_destacada.replace("REMPLAZAR", runa.diversion_tipo.toUpperCase()) + '</span> ' + runa.descripcion_restante + '<br /> ' +
                         'Puedes retirar la runa en cualquier momento y usarla en otra ' + runa.descripcion_usa_con + '.');
                 } else if (runa.difieren === "2") {
+                    $('#runasModal #conflicto .modal-body .mejorar').text('Se usa para mejorar ' + runa.mejorar);
+                    $('#runasModal #masacre .modal-body .mejorar').text('Se usa para mejorar ' + runa.mejorar);
+                    $('#runasModal #diversion .modal-body .mejorar').text('Se usa para mejorar ' + runa.mejorar);
+
+                    $('#runasModal #conflicto .modal-body .descripcion').html('Usa la runa con un ' + runa.descripcion_usa_con +
+                        ' para <span>' + runa.descripcion_destacada.replace("REMPLAZAR", runa.conflicto_tipo.toUpperCase()) + '</span> ' + runa.descripcion_restante + '<br /> ' +
+                        'Puedes retirar la runa en cualquier momento y usarla en otra ' + runa.descripcion_usa_con + '.');
+                    $('#runasModal #masacre .modal-body .descripcion').html('Usa la runa con un ' + runa.descripcion_usa_con +
+                        ' para <span>' + runa.descripcion_destacada.replace("REMPLAZAR", runa.masacre_tipo.toUpperCase()) + '</span> ' + runa.descripcion_restante + '<br /> ' +
+                        'Puedes retirar la runa en cualquier momento y usarla en otra ' + runa.descripcion_usa_con + '.');
+                    $('#runasModal #diversion .modal-body .descripcion').html('Usa la runa con un ' + runa.descripcion_usa_con +
+                        ' para <span>' + runa.descripcion_destacada.replace("REMPLAZAR", runa.diversion_tipo.toUpperCase()) + '</span> ' + runa.descripcion_restante + '<br /> ' +
+                        'Puedes retirar la runa en cualquier momento y usarla en otra ' + runa.descripcion_usa_con + '.');
+                } else if (runa.difieren === "3") {
                     var mejorasC = ''
                     var descripcion_usa_conC = '';
                     var tipoC = '';
