@@ -115,7 +115,7 @@ $('#runasModal').on('show.bs.modal', function (event) {
                     var mejorasD = ''
                     var descripcion_usa_conD = '';
                     var tipoD = '';
-                    if (diversion_tipo == "Hechicero") {
+                    if (runa.diversion_tipo == "Hechicero") {
                         mejorasD = 'atuendos de hechiceros';
                         descripcion_usa_conD = 'atuendo';
                         tipoD = 'hechicero';
