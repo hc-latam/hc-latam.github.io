@@ -77,17 +77,17 @@ $('#runasModal').on('show.bs.modal', function (event) {
                     var mejorasC = ''
                     var descripcion_usa_conC = '';
                     var tipoC = '';
-                    if (conflicto_tipo == "Hechicero") {
+                    if (runa.conflicto_tipo == "Hechicero") {
                         mejorasC = 'atuendos de hechiceros';
                         descripcion_usa_conC = 'atuendo';
                         tipoC = 'hechicero';
                     }
-                    if (conflicto_tipo == "Arquero") {
+                    if (runa.conflicto_tipo == "Arquero") {
                         mejorasC = 'equipamiento de arqueros';
                         descripcion_usa_conC = 'conjunto de equipamiento';
                         tipoC = 'arquero';
                     }
-                    if (conflicto_tipo == "Tanque") {
+                    if (runa.conflicto_tipo == "Tanque") {
                         mejorasC = 'armadura de guerreros';
                         descripcion_usa_conC = 'conjunto de armadura';
                         tipoC = 'guerrero';
@@ -96,17 +96,17 @@ $('#runasModal').on('show.bs.modal', function (event) {
                     var mejorasM = ''
                     var descripcion_usa_conM = '';
                     var tipoM = '';
-                    if (masacre_tipo == "Hechicero") {
+                    if (runa.masacre_tipo == "Hechicero") {
                         mejorasM = 'atuendos de hechiceros';
                         descripcion_usa_conM = 'atuendo';
                         tipoM = 'hechicero';
                     }
-                    if (masacre_tipo == "Arquero") {
+                    if (runa.masacre_tipo == "Arquero") {
                         mejorasM = 'equipamiento de arqueros';
                         descripcion_usa_conM = 'conjunto de equipamiento';
                         tipoM = 'arquero';
                     }
-                    if (masacre_tipo == "Tanque") {
+                    if (runa.masacre_tipo == "Tanque") {
                         mejorasM = 'armadura de guerreros';
                         descripcion_usa_conM = 'conjunto de armadura';
                         tipoM = 'guerrero';
@@ -120,12 +120,12 @@ $('#runasModal').on('show.bs.modal', function (event) {
                         descripcion_usa_conD = 'atuendo';
                         tipoD = 'hechicero';
                     }
-                    if (diversion_tipo == "Arquero") {
+                    if (runa.diversion_tipo == "Arquero") {
                         mejorasD = 'equipamiento de arqueros';
                         descripcion_usa_conD = 'conjunto de equipamiento';
                         tipoD = 'arquero';
                     }
-                    if (diversion_tipo == "Tanque") {
+                    if (runa.diversion_tipo == "Tanque") {
                         mejorasD = 'armadura de guerreros';
                         descripcion_usa_conD = 'conjunto de armadura';
                         tipoD = 'guerrero';
