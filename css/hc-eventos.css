@@ -33,6 +33,9 @@ body {
 .tipo-evento {
     height: 40px;
 }
+.dragon-rojo {
+    height: 35px;
+}
 
 @media (min-width: 576px) {
 

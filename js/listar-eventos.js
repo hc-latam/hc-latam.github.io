@@ -51,8 +51,11 @@ function crearTarjetaEvento(id, nombre, logo, fecha, artefacto, anillo, amuleto,
 
     if (tipo) contenido += "<img src='img/eventos/tipos/"+tipo+".png' class='tipo-evento' alt='"+tipo+"' title='"+tipo+"'></img>";
 
-    contenido +="<span class='small text-uppercase text-muted'>" + fecha + "</span>"+
-    "<ul class='list-group list-group-flush bg-dark mb-0 mt-3'>";
+    contenido +="<span class='small text-uppercase text-muted'>" + fecha + "</span>"
+
+    if (dragon_rojo) contenido += "<img src='img/eventos/tipos/dragon_rojo.png' class='dragon-rojo' alt='Dragon Rojo' title='Dragon Rojo'></img>";
+
+    contenido += "<ul class='list-group list-group-flush bg-dark mb-0 mt-3'>";
 
     if (artefacto) contenido += "<li class='list-group-item bg-dark p-0 border-0 artefacto'><a href='#' data-toggle='modal' data-target='#artefactoModal' data-evento='"+id+"'><img src='img/eventos/artefactos/" + artefacto + "' alt='" + artefacto + "' class='img-fluid mb-3'></a></li>";
     
@@ -69,8 +72,6 @@ function crearTarjetaEvento(id, nombre, logo, fecha, artefacto, anillo, amuleto,
     if (extras) contenido += "<li class='list-group-item bg-dark p-0 border-0 extras'><img src='img/eventos/extras/" + extras + "' alt='" + extras + "' class='img-fluid mb-3'></li>";
 
     //if (outfit) contenido += "<li class='list-group-item bg-dark p-0 border-0 outfit'><img src='img/eventos/outfit/" + outfit + "' alt='" + outfit + "' class='img-fluid mb-3'></li>";
-
-    if (dragon_rojo) contenido += "<img src='img/eventos/tipos/dragon_rojo.png' width='100px' alt='Dragon Rojo' title='Dragon Rojo'></img>";
     
     contenido += "</ul></div></div>";
 
