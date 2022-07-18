@@ -26,7 +26,8 @@ function obtenerListadoEventos(){
                     evento.runas,
                     evento.extras,
                     evento.outfit,
-                    evento.tipo
+                    evento.tipo,
+                    evento.dragon_rojo
                 ))
             })
         },
@@ -38,7 +39,7 @@ function obtenerListadoEventos(){
     
 }
 
-function crearTarjetaEvento(id, nombre, logo, fecha, artefacto, anillo, amuleto, armaduras, armas, runas, extras, outfit, tipo) {
+function crearTarjetaEvento(id, nombre, logo, fecha, artefacto, anillo, amuleto, armaduras, armas, runas, extras, outfit, tipo, dragon_rojo) {
 
     if (fecha==null) fecha='';
 
@@ -69,6 +70,8 @@ function crearTarjetaEvento(id, nombre, logo, fecha, artefacto, anillo, amuleto,
 
     //if (outfit) contenido += "<li class='list-group-item bg-dark p-0 border-0 outfit'><img src='img/eventos/outfit/" + outfit + "' alt='" + outfit + "' class='img-fluid mb-3'></li>";
 
+    if (dragon_rojo) contenido += "<img src='img/eventos/tipos/dragon_rojo.png' class='tipo-evento' alt='Dragon Rojo' title='Dragon Rojo'></img>";
+    
     contenido += "</ul></div></div>";
 
     var tarjeta = $(contenido);
